@@ -16,7 +16,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-slate-50 via-white to-indigo-50 overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-br from-slate-50 via-white to-indigo-50 overflow-hidden pt-20 md:pt-5">
       {/* Background floating elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -top-40 -left-40 w-80 h-80 bg-gradient-to-br from-[#5944E4]/20 to-purple-400/20 rounded-full blur-3xl animate-pulse"></div>
@@ -40,8 +40,8 @@ const Hero = () => {
 
             {/* Heading */}
             <div className="space-y-4">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
-                <span className="text-gray-900">I write about</span>
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-4xl font-bold leading-tight">
+                <span className="text-gray-900">Man cannot discover new oceans unless he has the courage to lose sight of the shore</span>
                 <br />
                 <span className="bg-gradient-to-r from-[#5944E4] via-purple-600 to-indigo-600 bg-clip-text text-transparent">
                   ideas & creativity
@@ -100,24 +100,7 @@ const Hero = () => {
             </div>
 
             {/* Social proof */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6 text-sm text-gray-500 mt-6">
-              <div className="flex items-center gap-3">
-                <div className="flex -space-x-2">
-                  <div className="w-8 h-8 bg-gradient-to-br from-[#5944E4] to-purple-500 rounded-full border-2 border-white"></div>
-                  <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-full border-2 border-white"></div>
-                  <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-full border-2 border-white"></div>
-                </div>
-                <span>Trusted by industry leaders</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="flex gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <span>4.9/5 from readers</span>
-              </div>
-            </div>
+            
           </div>
 
           {/* Right content */}

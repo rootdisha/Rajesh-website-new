@@ -1,8 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+
+
 import postImg1 from "../Images/business-person-looking-finance-graphs.jpg";
 import postImg2 from "../Images/vintage-collage-frame-wallpaper-background-paper-texture-with-design-space.jpg";
 import postImg3 from "../Images/saas-concept-collage.jpg";
@@ -14,21 +17,6 @@ const posts = [
 ];
 
 const RecentPosts = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 600,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4500,
-    arrows: false,
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 640, settings: { slidesToShow: 1 } },
-    ],
-  };
-
   return (
     <section className="relative bg-gradient-to-br from-white via-slate-50 to-indigo-50 py-20 px-6 overflow-hidden">
       {/* Background gradient circles */}
@@ -47,25 +35,35 @@ const RecentPosts = () => {
           Recent <span className="text-[#5944E4]">Posts</span>
         </motion.h2>
 
-        {/* Carousel */}
-        <Slider {...settings}>
+        {/* Swiper Carousel */}
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          spaceBetween={24}
+          slidesPerView={3}
+          loop={true}
+          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            1024: { slidesPerView: 3 },
+            768: { slidesPerView: 2 },
+            0: { slidesPerView: 1 },
+          }}
+        >
           {posts.map((post, index) => (
-            <motion.div
-              key={index}
-              className="px-3"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2, duration: 0.7 }}
-              viewport={{ once: true }}
-            >
-              <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 overflow-hidden cursor-pointer border border-gray-100">
+            <SwiperSlide key={index}>
+              <motion.div
+                className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 overflow-hidden cursor-pointer border border-gray-100"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.2, duration: 0.7 }}
+                viewport={{ once: true }}
+              >
                 <div className="relative">
                   <img
                     src={post.img}
                     alt={post.title}
                     className="w-full h-56 md:h-48 object-cover rounded-t-2xl"
                   />
-                  {/* Gradient overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#5944E4]/20 via-transparent rounded-t-2xl"></div>
                 </div>
                 <div className="p-6 text-left">
@@ -74,10 +72,10 @@ const RecentPosts = () => {
                   </h3>
                   <p className="text-sm text-gray-500">Read more →</p>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </SwiperSlide>
           ))}
-        </Slider>
+        </Swiper>
       </div>
     </section>
   );
