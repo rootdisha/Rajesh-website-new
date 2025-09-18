@@ -34,12 +34,12 @@ const Footer = () => {
           <div className="flex flex-col gap-2 text-gray-400">
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />
-              <span>contact@dhisamedias.com</span>
+              <span>rajesh@theproductartisan.com</span>
             </div>
-            <div className="flex items-center gap-2">
+            {/* <div className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
               <span>+91 98765 43210</span>
-            </div>
+            </div> */}
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
               <span>Chennai, India</span>
