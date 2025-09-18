@@ -1,11 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-
-
 import postImg1 from "../Images/business-person-looking-finance-graphs.jpg";
 import postImg2 from "../Images/vintage-collage-frame-wallpaper-background-paper-texture-with-design-space.jpg";
 import postImg3 from "../Images/saas-concept-collage.jpg";
@@ -16,69 +10,41 @@ const posts = [
   { img: postImg3, title: "Alice in Wonderland: Lost Product Managers — insights, a match-made in heaven & the new holy grail — Part II" },
 ];
 
-const RecentPosts = () => {
+export default function NewspaperSection() {
   return (
-    <section className="relative bg-gradient-to-br from-white via-slate-50 to-indigo-50 py-20 px-6 overflow-hidden">
-      {/* Background gradient circles */}
-      <div className="absolute -top-40 -left-40 w-72 h-72 bg-[#5944E4]/10 rounded-full blur-3xl"></div>
-      <div className="absolute -bottom-20 right-0 w-96 h-96 bg-[#5944E4]/10 rounded-full blur-3xl"></div>
+    <section className="max-w-3xl mx-auto px-4 py-16 flex flex-col md:flex-row gap-12">
+    
+      {/* Right Column - Recent Posts (Sticky) */}
+      <div className="flex-1">
+        <div className="sticky top-24">
+          <div className="flex items-center mb-4">
+            <div className="w-12 h-1 bg-[#5944e4] mr-3"></div>
+            <h3 className="text-2xl font-bold">Recent Posts</h3>
+          </div>
 
-      <div className="relative max-w-6xl mx-auto text-center">
-        {/* Heading */}
-        <motion.h2
-          className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-12"
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-        >
-          Recent <span className="text-[#5944E4]">Posts</span>
-        </motion.h2>
-
-        {/* Swiper Carousel */}
-        <Swiper
-          modules={[Autoplay, Pagination]}
-          spaceBetween={24}
-          slidesPerView={3}
-          loop={true}
-          autoplay={{ delay: 4000, disableOnInteraction: false }}
-          pagination={{ clickable: true }}
-          breakpoints={{
-            1024: { slidesPerView: 3 },
-            768: { slidesPerView: 2 },
-            0: { slidesPerView: 1 },
-          }}
-        >
-          {posts.map((post, index) => (
-            <SwiperSlide key={index}>
+          <div className="space-y-6">
+            {posts.map((post, index) => (
               <motion.div
-                className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 overflow-hidden cursor-pointer border border-gray-100"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.2, duration: 0.7 }}
-                viewport={{ once: true }}
+                key={index}
+                className="flex gap-4 cursor-pointer hover:bg-gray-50 p-3 rounded-lg transition"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.2, duration: 0.5 }}
               >
-                <div className="relative">
-                  <img
-                    src={post.img}
-                    alt={post.title}
-                    className="w-full h-56 md:h-48 object-cover rounded-t-2xl"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#5944E4]/20 via-transparent rounded-t-2xl"></div>
-                </div>
-                <div className="p-6 text-left">
-                  <h3 className="text-lg md:text-xl font-semibold text-gray-900 leading-snug mb-2">
-                    {post.title}
-                  </h3>
-                  <p className="text-sm text-gray-500">Read more →</p>
+                <img
+                  src={post.img}
+                  alt={post.title}
+                  className="w-24 h-24 object-cover rounded-lg flex-shrink-0"
+                />
+                <div className="flex-1">
+                  <h4 className="font-semibold text-gray-900 text-sm md:text-base">{post.title}</h4>
+                  <p className="text-xs text-gray-500 mt-1">Read more →</p>
                 </div>
               </motion.div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
-};
-
-export default RecentPosts;
+}

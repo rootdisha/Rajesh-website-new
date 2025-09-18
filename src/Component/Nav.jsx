@@ -5,12 +5,19 @@ import { Menu, X } from "lucide-react";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const links = ["Home", "About", "Services", "Portfolio", "Contact"];
+  const links = ["Home", "About", "Services", "Contact"];
 
   const drawerVariants = {
     hidden: { x: "100%" },
     visible: { x: 0, transition: { type: "spring", stiffness: 70 } },
     exit: { x: "100%", transition: { type: "spring", stiffness: 70 } },
+  };
+
+  // Helper to handle smooth scroll to top
+  const handleHomeClick = (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setOpen(false);
   };
 
   return (
@@ -32,7 +39,12 @@ export default function Navbar() {
             {links.map((link) => (
               <motion.a
                 key={link}
-                href={`#${link.toLowerCase()}`}
+                href={link === "Home" ? "/" : `${link.toLowerCase()}`}
+                onClick={
+                  link === "Home"
+                    ? handleHomeClick
+                    : () => setOpen(false)
+                }
                 className="relative text-gray-700 hover:text-blue-600 font-medium"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.95 }}
@@ -78,10 +90,14 @@ export default function Navbar() {
             {links.map((link) => (
               <motion.a
                 key={link}
-                href={`#${link.toLowerCase()}`}
+                href={link === "Home" ? "/" : `${link.toLowerCase()}`}
+                onClick={
+                  link === "Home"
+                    ? handleHomeClick
+                    : () => setOpen(false)
+                }
                 className="text-lg text-gray-700 hover:text-blue-600 font-medium"
                 whileTap={{ scale: 0.95 }}
-                onClick={() => setOpen(false)}
               >
                 {link}
               </motion.a>
