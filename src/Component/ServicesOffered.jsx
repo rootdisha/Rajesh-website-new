@@ -104,7 +104,7 @@ export default function ServicesOffered() {
           </p>
           <p>
             Availability is limited to a small number of engagements each quarter to ensure focus
-            and impact. Book your consultation slot today.
+            and impact. <span className="font-bold">Book your consultation slot today.</span> 
           </p>
         </div>
       </motion.div>
@@ -145,7 +145,27 @@ export default function ServicesOffered() {
             slot today.
           </p>
         </div>
+        
       </motion.div>
+      <div className="text-center mt-12 space-y-4">
+      {/* Book your consultation */}
+      <a
+        href="https://calendly.com/your-calendly-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block border border-purple-600 text-purple-600 px-6 py-2 rounded hover:bg-purple-600 hover:text-white transition-colors"
+      >
+        Book your consultation
+      </a>
+
+      {/* Contact me */}
+      <a
+        href="mailto:rajesh@theproductartisan.com"
+        className="inline-block border border-gray-700 text-gray-700 px-6 py-2 rounded hover:bg-gray-700 hover:text-white transition-colors ml-4"
+      >
+        Contact me
+      </a>
+    </div>
     </section>
   );
 }
