@@ -114,10 +114,10 @@ const Hero = () => {
                 />
                 {/* Decorative floating badges */}
                 <div className="absolute -top-6 left-4 lg:left-8 bg-white rounded-full px-3 py-2 shadow-lg border border-gray-100 z-20">
-                  <div className="flex items-center gap-2 text-xs lg:text-sm font-medium text-gray-700">
-                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                    <span>Available for projects</span>
-                  </div>
+                  {/* <div className="flex items-center gap-2 text-xs lg:text-sm font-medium text-gray-700"> */}
+                    {/* <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                    <span>Available for projects</span> */}
+                  {/* </div> */}
                 </div>
                 <div className="absolute -bottom-4 right-4 lg:right-8 bg-white rounded-full px-3 py-2 shadow-lg border border-gray-100 z-20">
                   <div className="flex items-center gap-2 text-xs lg:text-sm font-medium text-gray-700">

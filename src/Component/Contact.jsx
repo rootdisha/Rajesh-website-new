@@ -42,14 +42,14 @@ const Contact = () => {
             Contact Me
           </motion.h2>
 
-          <motion.p
+          {/* <motion.p
             className="text-gray-600 mb-10"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.5 }}
           >
             I’d love to hear from you! Fill out the form below and I’ll get back to you as soon as possible.
-          </motion.p>
+          </motion.p> */}
 
           <form className="space-y-6">
             <motion.div

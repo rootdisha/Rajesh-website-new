@@ -29,8 +29,7 @@ const Footer = () => {
         >
           <h3 className="text-xl font-bold text-white">Rajesh Chandran</h3>
           <p className="text-gray-400 max-w-sm">
-            We craft modern, clean web experiences that are visually appealing and highly functional.
-          </p>
+Helping product leaders and founders drive growth, scale teams, and build world-class execution          </p>
           <div className="flex flex-col gap-2 text-gray-400">
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />
