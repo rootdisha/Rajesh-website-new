@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import AA from "../Images/vintage-collage-frame-wallpaper-background-paper-texture-with-design-space.jpg"
+import AA from "../Images/leader-authority-boss-coach-director-manager-concept.jpg"
+import AB from "../Images/people-office-analyzing-checking-finance-graphs.jpg"
+import AC from "../Images/man-sitting-living-room-home-guy-enjoying-studying-using-laptop-headset.jpg"
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -30,7 +32,7 @@ const services = [
       "Design pricing and monetization models for sustainable profit.",
       "Build and lead high-performance product teams.",
     ],
-    img: AA,
+    img: AB,
   },
   {
     title: "Product Talks & Webinars – The Real Highs & Lows",
@@ -42,7 +44,7 @@ const services = [
       "Cross-functional insights from product to AI/ML strategy.",
       "Tailored sessions for leadership teams or conference audiences.",
     ],
-    img:AA,
+    img:AC,
   },
 ];
 

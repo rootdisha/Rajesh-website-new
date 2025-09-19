@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const links = ["Home", "About", "Services", "Contact"];
+  const links = ["Home", "AboutUs", "Services", "ContactUS"];
 
   const drawerVariants = {
     hidden: { x: "100%" },
