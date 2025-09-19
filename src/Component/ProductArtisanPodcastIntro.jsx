@@ -35,7 +35,7 @@ export default function ProductArtisanPodcastIntro() {
         {/* Heading */}
         <motion.h2
           variants={fadeIn}
-          className="text-4xl md:text-5xl font-extrabold text-center mb-6 font-[hng]"
+          className="text-4xl md:text-5xl pt-20 text-center mb-6 font-[hng]"
         >
           <span className="text-gray-800">The Product </span>
           <span className="text-[#5944e4]">Artisan Podcast</span>
