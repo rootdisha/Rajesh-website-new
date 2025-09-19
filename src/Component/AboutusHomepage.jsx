@@ -57,9 +57,14 @@ export default function EssaysSection() {
           <p className="text-gray-700 mb-6">
             With nearly two decades of leadership experience at Fortune 500 companies and emerging ventures, I’ve had the chance to work with incredible people, breakthrough technologies, and bold visions that shape the future.
           </p>
-          <button className="border border-[#5944e4] text-[#5944e4] px-4 py-2 w-36 hover:bg-purple-50 transition">
-            Know More
-          </button>
+         <a
+  href="/aboutus"
+  className="border border-[#5944e4] text-[#5944e4] px-4 py-2 w-36 
+             hover:bg-purple-50 transition inline-block text-center"
+>
+  Know More
+</a>
+
         </div>
       </div>
     </section>

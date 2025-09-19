@@ -1,11 +1,17 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const links = ["Home", "AboutUs", "Services", "ContactUS"];
+  const links = [
+    { name: "Home", to: "/" },
+    { name: "About Us", to: "/aboutus" },
+    { name: "Services", to: "/services" },
+    { name: "Contact Us", to: "/contactus" },
+  ];
 
   const drawerVariants = {
     hidden: { x: "100%" },
@@ -13,59 +19,49 @@ export default function Navbar() {
     exit: { x: "100%", transition: { type: "spring", stiffness: 70 } },
   };
 
-  // Helper to handle smooth scroll to top
-  const handleHomeClick = (e) => {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    setOpen(false);
-  };
-
   return (
-    <nav className="fixed top-0 w-full z-50">
-      {/* White glassy background */}
+    <nav className="fixed top-0 left-0 w-full z-50">
+      {/* Glassy top bar */}
       <div className="backdrop-blur-md bg-white/90 shadow-md">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
           {/* Logo */}
-          <motion.a
-            href="/"
-            className="text-2xl md:text-3xl font-extrabold text-gray-800 tracking-wide"
-            whileHover={{ scale: 1.08 }}
-          >
-            Rajesh Chandran
-          </motion.a>
+          <motion.div whileHover={{ scale: 1.05 }}>
+            <Link
+              to="/"
+              className="text-2xl md:text-3xl font-extrabold text-gray-800 tracking-wide"
+              onClick={() => setOpen(false)}
+            >
+              Rajesh Chandran
+            </Link>
+          </motion.div>
 
-          {/* Desktop Links */}
+          {/* -------- Desktop Links -------- */}
           <div className="hidden md:flex space-x-8">
-            {links.map((link) => (
-              <motion.a
-                key={link}
-                href={link === "Home" ? "/" : `${link.toLowerCase()}`}
-                onClick={
-                  link === "Home"
-                    ? handleHomeClick
-                    : () => setOpen(false)
-                }
-                className="relative text-gray-700 hover:text-blue-600 font-medium"
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {link}
-                <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-              </motion.a>
+            {links.map((l) => (
+              <motion.div key={l.name} whileHover={{ y: -2 }} whileTap={{ scale: 0.95 }}>
+                <Link
+                  to={l.to}
+                  className="relative text-gray-700 hover:text-blue-600 font-medium"
+                  onClick={() => setOpen(false)}
+                >
+                  {l.name}
+                </Link>
+              </motion.div>
             ))}
           </div>
 
-          {/* Desktop CTA Button */}
-          <motion.a
-            href="#contact"
-            className="hidden md:block bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700 transition"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Let’s Talk
-          </motion.a>
+          {/* Desktop CTA */}
+          <motion.div className="hidden md:block" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Link
+              to="/contact"
+              className="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700 transition"
+              onClick={() => setOpen(false)}
+            >
+              Let’s Talk
+            </Link>
+          </motion.div>
 
-          {/* Mobile Hamburger */}
+          {/* -------- Mobile Hamburger -------- */}
           <button
             className="md:hidden text-gray-700 p-2"
             onClick={() => setOpen((prev) => !prev)}
@@ -76,42 +72,38 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Drawer */}
+      {/* -------- Mobile Drawer -------- */}
       <AnimatePresence>
         {open && (
           <motion.div
-            key="mobileDrawer"
-            className="fixed top-0 right-0 h-screen w-64 bg-white p-6 md:hidden flex flex-col space-y-6 shadow-lg"
+            key="drawer"
+            className="fixed top-0 right-0 h-screen w-64 bg-white p-6 flex flex-col space-y-6 shadow-lg md:hidden"
             variants={drawerVariants}
             initial="hidden"
             animate="visible"
             exit="exit"
           >
-            {links.map((link) => (
-              <motion.a
-                key={link}
-                href={link === "Home" ? "/" : `${link.toLowerCase()}`}
-                onClick={
-                  link === "Home"
-                    ? handleHomeClick
-                    : () => setOpen(false)
-                }
-                className="text-lg text-gray-700 hover:text-blue-600 font-medium"
-                whileTap={{ scale: 0.95 }}
-              >
-                {link}
-              </motion.a>
+            {links.map((l) => (
+              <motion.div key={l.name} whileTap={{ scale: 0.95 }}>
+                <Link
+                  to={l.to}
+                  className="text-lg text-gray-700 hover:text-blue-600 font-medium"
+                  onClick={() => setOpen(false)}
+                >
+                  {l.name}
+                </Link>
+              </motion.div>
             ))}
 
-            <motion.a
-              href="#contact"
-              className="mt-auto bg-blue-600 text-white px-4 py-2 rounded-full text-center font-semibold hover:bg-blue-700 transition"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => setOpen(false)}
-            >
-              Let’s Talk
-            </motion.a>
+            <motion.div className="mt-auto" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Link
+                to="/contact"
+                className="bg-blue-600 text-white px-4 py-2 rounded-full text-center font-semibold hover:bg-blue-700 transition"
+                onClick={() => setOpen(false)}
+              >
+                Let’s Talk
+              </Link>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>

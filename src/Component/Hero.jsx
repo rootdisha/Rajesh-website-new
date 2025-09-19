@@ -41,26 +41,26 @@ const Hero = () => {
             {/* Heading */}
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-4xl font-bold leading-tight">
-                <span className="text-gray-900">Man cannot discover new oceans unless he has the courage to lose sight of the shore</span>
-                <br />
+                <span className="text-gray-900">"Man cannot discover new oceans unless he has the courage to lose sight of the shore"</span>
+                {/* <br />
                 <span className="bg-gradient-to-r from-[#5944E4] via-purple-600 to-indigo-600 bg-clip-text text-transparent">
                   ideas & creativity
                 </span>
-                <br />
-                <span className="text-gray-700">for the modern web</span>
+                <br /> */}
+                {/* <span className="text-gray-700">for the modern web</span> */}
               </h1>
               <div className="w-16 h-1 bg-gradient-to-r from-[#5944E4] to-purple-500 mx-auto lg:mx-0 rounded-full"></div>
             </div>
 
             {/* Description */}
-            <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
+            {/* <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
               Join{' '}
               <span className="inline-flex items-center gap-1 font-bold text-[#5944E4]">
                 <Star className="w-4 h-4 fill-current" />
                 70,000+
               </span>{' '}
               readers exploring bold ideas in technology, design, and product strategy.
-            </p>
+            </p> */}
 
             {/* Email subscribe */}
             <div className="w-full max-w-lg mx-auto lg:mx-0 flex flex-col sm:flex-row gap-3">
@@ -91,9 +91,18 @@ const Hero = () => {
 
             {/* Action buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start max-w-lg mx-auto lg:mx-0 mt-6">
-              <button className="group flex items-center justify-center gap-3 px-8 py-4 bg-white border-2 border-[#5944E4] text-[#5944E4] font-semibold rounded-2xl hover:bg-[#5944E4] hover:text-white transition-all shadow-md hover:shadow-lg transform hover:-translate-y-1 flex-1 sm:flex-none">
-                <User className="w-5 h-5" /> About Me
-              </button>
+            <a
+  href="/aboutus"
+  className="group flex items-center justify-center gap-3 px-8 py-4 
+             bg-white border-2 border-[#5944E4] text-[#5944E4] font-semibold 
+             rounded-2xl hover:bg-[#5944E4] hover:text-white transition-all 
+             shadow-md hover:shadow-lg transform hover:-translate-y-1 
+             flex-1 sm:flex-none"
+>
+  <User className="w-5 h-5" />
+  About Me
+</a>
+
               <button className="group flex items-center justify-center gap-3 px-8 py-4 bg-white border-2 border-gray-300 text-gray-700 font-semibold rounded-2xl hover:bg-gray-100 hover:border-gray-400 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-1 flex-1 sm:flex-none">
                 <Briefcase className="w-5 h-5" /> My Work
               </button>

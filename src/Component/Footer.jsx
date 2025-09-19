@@ -54,13 +54,14 @@ Helping product leaders and founders drive growth, scale teams, and build world-
           transition={{ duration: 0.7 }}
         >
           <div className="flex flex-col gap-2 text-gray-400">
-            <span className="hover:text-white cursor-pointer transition">Home</span>
-            <span className="hover:text-white cursor-pointer transition">About</span>
-            <span className="hover:text-white cursor-pointer transition">Services</span>
-            <span className="hover:text-white cursor-pointer transition">Contact</span>
-          </div>
+  <a href="/" className="hover:text-white transition">Home</a>
+  <a href="/aboutus" className="hover:text-white transition">About</a>
+  <a href="/services" className="hover:text-white transition">Services</a>
+  <a href="/contactus" className="hover:text-white transition">Contact</a>
+</div>
+
           <p className="text-gray-500 mt-6 text-sm">
-            © 2025 Developed by <span className="text-[#5944E4] font-semibold">Dhisa Medias</span>
+            © 2025 Developed by <span className="text-[#5944E4] font-semibold">D                            isha Medias</span>
           </p>
         </motion.div>
       </div>
