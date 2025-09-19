@@ -51,13 +51,13 @@ export default function ProductArtisanPodcastIntro() {
           For operators, by operators.
         </motion.p>
 
-        <motion.p
+        {/* <motion.p
           variants={fadeIn}
           className="mt-4 text-gray-700 text-lg md:text-xl text-center max-w-6xl mx-auto leading-relaxed"
         >
           Conversations with seasoned product leaders—no hype, no jargon.
           Just what works, what doesn’t, and most importantly, <em>why</em>.
-        </motion.p>
+        </motion.p> */}
         <motion.p
           variants={fadeIn}
           className="mt-4 text-gray-700 text-lg md:text-xl text-center max-w-6xl mx-auto leading-relaxed"

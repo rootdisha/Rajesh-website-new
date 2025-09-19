@@ -9,7 +9,7 @@ export default function EssaysSection() {
       <div className="flex-1">
         <div className="flex items-center mb-2">
           <div className="w-16 h-1 bg-[#5944e4] mr-4"></div>
-          <span className="text-2xl tracking-wider">About Us</span>
+          <span className="text-2xl tracking-wider">About Me</span>
         </div>
 
         <motion.h2

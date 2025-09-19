@@ -18,7 +18,7 @@ export default function EssaysSection() {
           <div className="flex items-center gap-3">
             <span className="w-12 h-1 bg-purple-600 rounded-full"></span>
             <span className="uppercase tracking-widest text-sm text-purple-700 font-semibold">
-              About Us
+              About Me
             </span>
           </div>
 

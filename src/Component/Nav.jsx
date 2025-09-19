@@ -8,10 +8,10 @@ export default function Navbar() {
 
   const links = [
     { name: "Home", to: "/" },
-    { name: "About Us", to: "About_Us" },
+    { name: "About Me", to: "/About_me" },
     { name: "Podcast", to: "/Podcast" },
     { name: "Services", to: "/services" },
-    { name: "Contact Us", to: "/Contact_Us" },
+    { name: "Contact Me", to: "/Contact_Me" },
   ];
 
   const drawerVariants = {
@@ -54,7 +54,7 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <motion.div className="hidden md:block" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link
-              to="/About_us"
+              to="/About_me"
               className="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700 transition"
               onClick={() => setOpen(false)}
             >
@@ -98,7 +98,7 @@ export default function Navbar() {
 
             <motion.div className="mt-auto" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
-                to="/About_us"
+                to="/About_me"
                 className="bg-blue-600 text-white px-4 py-2 rounded-full text-center font-semibold hover:bg-blue-700 transition"
                 onClick={() => setOpen(false)}
               >
