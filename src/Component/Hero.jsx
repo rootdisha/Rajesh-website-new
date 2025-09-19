@@ -41,7 +41,7 @@ const Hero = () => {
             {/* Heading */}
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-4xl font-bold leading-tight">
-                <span className="text-gray-900">"Man cannot discover new oceans unless he has the courage to lose sight of the shore"</span>
+                <span className="text-gray-900">Man cannot discover new oceans unless he has the courage to lose sight of the shore</span>
                 {/* <br />
                 <span className="bg-gradient-to-r from-[#5944E4] via-purple-600 to-indigo-600 bg-clip-text text-transparent">
                   ideas & creativity
@@ -49,6 +49,7 @@ const Hero = () => {
                 <br /> */}
                 {/* <span className="text-gray-700">for the modern web</span> */}
               </h1>
+              <p>" Be Positive. Be True. Be Kind - Roy T.Bennett "</p>
               <div className="w-16 h-1 bg-gradient-to-r from-[#5944E4] to-purple-500 mx-auto lg:mx-0 rounded-full"></div>
             </div>
 

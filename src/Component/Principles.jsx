@@ -15,7 +15,7 @@ const leadershipPrinciples = [
   "Balance your ratios. Improve your Say–Do, Talk–Listen, and Know–Learn every day.",
   "Be specific, be accountable. Hyper-clear goals and candid reflection are true leadership superpowers.",
   "Play the team sport. Product thrives on collaboration, diversity, and shared pride across disciplines.",
-  "Invest to compound talent. There are no shortcuts — development and upskilling build teams that last.",
+"Invest to compound talent. There are no shortcuts — development and upskilling build teams that last.",
 ];
 
 export default function Principles() {

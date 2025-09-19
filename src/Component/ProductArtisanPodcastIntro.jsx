@@ -35,7 +35,7 @@ export default function ProductArtisanPodcastIntro() {
         {/* Heading */}
         <motion.h2
           variants={fadeIn}
-          className="text-4xl md:text-5xl pt-20 text-center mb-6 font-[hng]"
+          className="text-4xl md:text-5xl pt-20 text-center mb-6 "
         >
           <span className="text-gray-800">The Product </span>
           <span className="text-[#5944e4]">Artisan Podcast</span>
@@ -44,7 +44,7 @@ export default function ProductArtisanPodcastIntro() {
         {/* Intro text */}
         <motion.p
           variants={fadeIn}
-          className="text-gray-700 text-lg md:text-xl text-center max-w-3xl mx-auto leading-relaxed"
+          className="text-gray-700 text-lg md:text-xl text-center max-w-6xl mx-auto leading-relaxed"
         >
           Welcome to <strong>The Product Artisan</strong>—a podcast for those
           who build, scale, and lead products in the real world.  
@@ -53,10 +53,18 @@ export default function ProductArtisanPodcastIntro() {
 
         <motion.p
           variants={fadeIn}
-          className="mt-4 text-gray-700 text-lg md:text-xl text-center max-w-3xl mx-auto leading-relaxed"
+          className="mt-4 text-gray-700 text-lg md:text-xl text-center max-w-6xl mx-auto leading-relaxed"
         >
           Conversations with seasoned product leaders—no hype, no jargon.
           Just what works, what doesn’t, and most importantly, <em>why</em>.
+        </motion.p>
+        <motion.p
+          variants={fadeIn}
+          className="mt-4 text-gray-700 text-lg md:text-xl text-center max-w-6xl mx-auto leading-relaxed"
+        >
+          Each episode features conversations with seasoned operators and product leaders—people
+who’ve been in the trenches and know what it takes to deliver impact. This isn’t about hype
+or buzzwords. It’s about what actually works, what doesn’t, and more importantly WHY.
         </motion.p>
 
         {/* Cards */}

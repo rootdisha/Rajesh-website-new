@@ -27,22 +27,18 @@ export default function EssaysSection() {
           </h2>
 
           <p className="text-gray-700 leading-relaxed">
-            I’m passionate about creating products that truly make an impact—helping
-            enterprises achieve their business goals or enabling startups to scale.
-            I love building teams that thrive on ownership, accountability,
-            and collaboration.
+            I’m passionate about creating products that truly make an impact —whether that’s helping
+enterprises achieve their business goals or enabling startups to scale. I love building teams
+that thrive on ownership, accountability, and collaboration, and I believe the best results
+come from pairing new ideas with consistent execution.
           </p>
 
           <p className="text-gray-700 leading-relaxed">
-            I also care deeply about how technology can drive change beyond
-            business. Over the years, I’ve mentored social startups tackling
-            challenges like digital literacy and urban sanitation—initiatives
-            that improve lives in meaningful ways.
+           I also care deeply about how technology can drive change beyond business. Over the years,
+I’ve had the privilege of mentoring social startups tackling challenges like digital literacy, 
+social fundraising &amp; urban sanitation—initiatives that are improving lives in meaningful ways.
           </p>
 
-          <button className="inline-block mt-4 bg-purple-600 text-white px-6 py-3 rounded-full shadow hover:bg-purple-700 transition">
-            Know More
-          </button>
         </motion.div>
 
         {/* Right Image Block */}
@@ -66,11 +62,11 @@ export default function EssaysSection() {
 
       {/* Bottom Essays Text */}
       <div className="max-w-3xl mx-auto mt-16 text-center">
-        <h3 className="text-3xl font-bold text-gray-900 mb-4">Essays</h3>
+        {/* <h3 className="text-3xl font-bold text-gray-900 mb-4">Essays</h3> */}
         <p className="text-gray-700 leading-relaxed">
-          With nearly two decades of leadership experience at Fortune 500 companies
-          and emerging ventures, I’ve worked with incredible people, breakthrough
-          technologies, and bold visions that shape the future.
+          With nearly two decades of leadership experience at Fortune 500 companies and emerging
+ventures, I’ve had the chance to work with incredible people, breakthrough technologies, and
+bold visions that shape the future.
         </p>
       </div>
     </section>
