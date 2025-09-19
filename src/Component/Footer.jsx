@@ -61,7 +61,7 @@ Helping product leaders and founders drive growth, scale teams, and build world-
 </div>
 
           <p className="text-gray-500 mt-6 text-sm">
-            © 2025 Developed by <span className="text-[#5944E4] font-semibold">D                            isha Medias</span>
+            © 2025 Developed by <span className="text-[#5944E4] font-semibold">Disha Medias</span>
           </p>
         </motion.div>
       </div>
