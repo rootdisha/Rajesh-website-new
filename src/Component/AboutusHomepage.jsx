@@ -12,14 +12,14 @@ export default function EssaysSection() {
           <span className="text-2xl tracking-wider">About Me</span>
         </div>
 
-        <motion.h2
+        {/* <motion.h2
           className="text-3xl md:text-4xl font-serif text-[#5944e4] mb-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
           Building impactful products and teams while using technology to create meaningful change.
-        </motion.h2>
+        </motion.h2> */}
 
         <motion.p
           className="text-gray-700 leading-relaxed mb-4"

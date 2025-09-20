@@ -46,10 +46,10 @@ export default function ContactUs() {
                 rajesh@theproductartisan.com
               </a>
             </div>
-            <div className="flex items-center gap-3">
+            {/* <div className="flex items-center gap-3">
               <Phone className="text-purple-600" />
               <span className="text-gray-700">+91 99801 66997</span>
-            </div>
+            </div> */}
             {/* <div className="flex items-center gap-3">
               <MapPin className="text-purple-600" />
               <span className="text-gray-700">
