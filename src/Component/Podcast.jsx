@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, Clock, Play, ExternalLink, Filter, ArrowLeft, Share2, Heart, Download, FileText, Music, Youtube, Headphones, ShoppingBag, ChevronLeft, ChevronRight, BookOpen } from 'lucide-react';
+import TPAPImage from "../Images/tpap.png";
 
 const Episodes = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -16,7 +17,7 @@ const Episodes = () => {
       title: "Decoding Travel Innovation: An episode with Prasanna",
       description: "In this episode of the Product Artisan podcast, Prasanna Veeraswamy, a seasoned product leader with extensive experience in the B2B and B2C sectors, who has also worked across multiple countries globally. Prasanna shares his journey from an engineering leader at Microsoft to taking on various product leadership roles within the travel industry, attributed to his passion for travel and strategic career advice.",
       fullDescription: "In this episode of the Product Artisan podcast, Prasanna Veeraswamy, a seasoned product leader with extensive experience in the B2B and B2C sectors, who has also worked across multiple countries globally. Prasanna shares his journey from an engineering leader at Microsoft to taking on various product leadership roles within the travel industry, attributed to his passion for travel and strategic career advice. The discussion covers the evolution of travel products, the impact of international experience on product leadership, and the role of data in developing and innovating in the travel space. Prasanna also discusses the pivotal role of Gen AI in enhancing productivity within product management and provides insights into building strong cross-functional product teams. Additionally, the conversation touches upon the challenges and opportunities within the travel industry, highlighting Airbnb's unique position through COVID-19 and the potential for innovation in travel products. Prasanna emphasizes the importance of data-driven development, behavioral analytics, and leveraging tools like Amplitude and Mixpanel for insights. The dialogue concludes with perspectives on future innovations in travel, especially around enhancing the experience of travelers through technology and AI.",
-      date: "2024-02-23",
+      date: "2024-03-07",
       duration: "30 min",
       category: "Business",
       featured: true,
@@ -110,7 +111,7 @@ Um, second. Hi, welcome to the Product Partisan podcast. My name is Rajesh and I
       title: "Navigating the Challenges of Platform Product Management in the Age of Generative AI",
       description: "In this episode, Ravi shares insights from his dynamic career spanning startups, non-profits, and major tech companies. From co-founding Enlite Networks to leadership roles at LibForAll Foundation, Lucidworks, and ServiceNow, Ravi discusses lessons learned in product building, emphasising purpose-driven decision-making and execution rigour.", 
       fullDescription: "In this episode, Ravi shares insights from his dynamic career spanning startups, non-profits, and major tech companies. From co-founding Enlite Networks to leadership roles at LibForAll Foundation, Lucidworks, and ServiceNow, Ravi discusses lessons learned in product building, emphasising purpose-driven decision-making and execution rigour. He explores the impact of Generative AI on product management, outlines the components of product strategy, and introduces the new Jobs to be Done in the era of AI. This podcast provides a concise yet comprehensive dive into Ravi's rich experiences, offering valuable insights for product professionals navigating diverse tech landscapes.",
-      date: "2024-03-08",
+      date: "2024-02-23",
       duration: "38 min",
       category: "Design",
       featured: false,
@@ -119,10 +120,10 @@ Um, second. Hi, welcome to the Product Partisan podcast. My name is Rajesh and I
       keyTopics: ["Design Tokens", "Component Libraries", "Design-Dev Collaboration", "Accessibility"],
       guestInfo: "Sarah Johnson - Head of Design at Shopify",
       platforms: {
-        spotify: "https://open.spotify.com/episode/example2",
-        youtube: "https://youtube.com/watch?v=example2",
-        apple: "https://podcasts.apple.com/podcast/example2",
-        amazon: "https://music.amazon.com/podcasts/example2"
+        spotify: "",
+        youtube: "https://www.youtube.com/watch?list=TLGGKMlFnWTG-NgyMjA5MjAyNQ&v=jcRR20dJ-WQ",
+        apple: "",
+        amazon: ""
       },
       showNotes: `**Show Notes**
 
@@ -188,7 +189,7 @@ Very close to that.....`,
       title: "Navigating the Product Landscape: A Conversation with Andrea Saez",
       description: "In this episode, Andrea, a seasoned professional in product marketing, shares insights from her multifaceted career journey as a product marketer, advisor, blogger, and author of the book The Product Momentum Gap.",
       fullDescription: "The funding landscape for startups has never been more complex. In this episode, we have an honest conversation about the trade-offs between bootstrapping and raising venture capital. We explore real-world examples of successful companies that chose different paths, discuss the hidden costs of each approach, and provide a framework for entrepreneurs to make informed decisions about funding.",
-      date: "2024-03-01",
+      date: "2024-02-23",
       duration: "52 min",
       category: "Business",
       featured: true,
@@ -283,7 +284,7 @@ Um, second. Hi, welcome to the Product Partisan podcast. My name is Rajesh and I
       description: "In this episode, Sindhu Kandipati takes us on a journey through her remarkable career trajectory, from her early roles at Microsoft to her impactful contributions at CERN, Eli Lilly, and the Wadhwani Foundation. She delves into her diverse experiences in program management, and brand management, ultimately explaining the pivotal shift that led her to embrace the world of product management.",
       fullDescription: `In this episode, Sindhu Kandipati takes us on a journey through her remarkable career trajectory, from her early roles at Microsoft to her impactful contributions at CERN, Eli Lilly, and the Wadhwani Foundation. She delves into her diverse experiences in program management, and brand management, ultimately explaining the pivotal shift that led her to embrace the world of product management.
 She shares valuable lessons learned during her time at CERN, providing a glimpse into the unique challenges and experiences of working at such a renowned institution. She also explores the framework for product management in the non-profit sector, highlighting key differences from for-profit organisations. The conversation covers essential aspects such as goal setting, product building, and the lifecycle of a product, providing listeners with valuable insights. Drawing from her experiences, Kandipati discusses her book "Leap of Faith," offering perspectives on non-linear career paths and unconventional growth trajectories. This serves as a compelling exploration of a professional journey marked by resilience, adaptability, and a passion for making a meaningful impact.`,
-      date: "2024-03-01",
+      date: "",
       duration: "52 min",
       category: "Business",
       featured: true,
@@ -349,7 +350,7 @@ And by the way, this is audio only. The video is more for us to interact, but wh
       title: "Navigating the Waves of Ad Tech: A Product Journey with Amit Goel",
       description: "In this episode, Amit Goel, an industry expert in advertising technology, delves into the dynamic landscape of ad tech, privacy laws, and the transformative role of AI. Key insights include navigating privacy laws' evolution, building globally compliant products, and the success formula behind Amagi's rise. Amit also sheds light on the scaling challenges faced and the transition to TradeDesk, emphasising the role of AI, including generative AI, in shaping the future of ad tech.",
       fullDescription: "In this episode, Amit Goel, an industry expert in advertising technology, delves into the dynamic landscape of ad tech, privacy laws, and the transformative role of AI. Key insights include navigating privacy laws' evolution, building globally compliant products, and the success formula behind Amagi's rise. Amit also sheds light on the scaling challenges faced and the transition to TradeDesk, emphasising the role of AI, including generative AI, in shaping the future of ad tech.",
-      date: "2024-03-01",
+      date: "",
       duration: "52 min",
       category: "Business",
       featured: true,
@@ -419,7 +420,7 @@ easy I think let me give you a thirty second update on how my career actually we
       title: "The Future of Product Management: Reflecting on the Past and Peeking into 2024",
       description: "In this podcast episode, Saeed Khan, a seasoned product leader based out of Toronto, shares his insights on the evolution of product management. Saeed discusses his experiences and learnings from his journey in the industry, delving into the importance of problem-solving, innovation, and understanding market needs. He also discusses the impact of Agile on product management, the rise of specialised roles, and the necessity of holistic thinking for successful products.",
       fullDescription: "In this podcast episode, Saeed Khan, a seasoned product leader based out of Toronto, shares his insights on the evolution of product management. Saeed discusses his experiences and learnings from his journey in the industry, delving into the importance of problem-solving, innovation, and understanding market needs. He also discusses the impact of Agile on product management, the rise of specialised roles, and the necessity of holistic thinking for successful products.",
-      date: "2024-03-01",
+      date: "2023-11-15",
       duration: "52 min",
       category: "Business",
       featured: true,
@@ -515,7 +516,7 @@ Yeah, yeah, I'm here......
       title: "Product and Design-Match Made in Heaven?",
       description: "Product and Design-Match Made in Heaven?",
       fullDescription: "The funding landscape for startups has never been more complex. In this episode, we have an honest conversation about the trade-offs between bootstrapping and raising venture capital. We explore real-world examples of successful companies that chose different paths, discuss the hidden costs of each approach, and provide a framework for entrepreneurs to make informed decisions about funding.",
-      date: "2024-03-01",
+      date: "2023-09-23",
       duration: "52 min",
       category: "Business",
       featured: true,
@@ -591,7 +592,7 @@ The launch of iphone, I could see that the world is not going to be the same goi
       title: "Product startups (B2B vsB2C)& Creating new product categories",
       description: "In this episode, Andrea, a seasoned professional in product marketing, shares insights from her multifaceted career journey as a product marketer, advisor, blogger, and author of the book The Product Momentum Gap.",
       fullDescription: "The funding landscape for startups has never been more complex. In this episode, we have an honest conversation about the trade-offs between bootstrapping and raising venture capital. We explore real-world examples of successful companies that chose different paths, discuss the hidden costs of each approach, and provide a framework for entrepreneurs to make informed decisions about funding.",
-      date: "2024-03-01",
+      date: "2023-08-24",
       duration: "52 min",
       category: "Business",
       featured: true,
@@ -688,7 +689,7 @@ Proper Chena 1st to Ma Lap. Initially Bib Kram moved to Nagano, so I studied in 
       title: "Navigating the Product Landscape: A Conversation with Andrea Saez",
       description: "In this episode, Andrea, a seasoned professional in product marketing, shares insights from her multifaceted career journey as a product marketer, advisor, blogger, and author of the book The Product Momentum Gap.",
       fullDescription: "Navigating the Challenges of Platform Product Management in the Age of Generative AI",
-      date: "2024-03-01",
+      date: "",
       duration: "52 min",
       category: "Business",
       featured: true,
@@ -780,7 +781,7 @@ Very close to that.....`,
       title: "Navigating the Product Landscape: A Conversation with Andrea Saez",
       description: "In this episode, Andrea, a seasoned professional in product marketing, shares insights from her multifaceted career journey as a product marketer, advisor, blogger, and author of the book The Product Momentum Gap.",
       fullDescription: "Decoding Travel Innovation: An episode with Prasanna",
-      date: "2024-03-01",
+      date: "",
       duration: "52 min",
       category: "Business",
       featured: true,
@@ -948,7 +949,7 @@ And by the way, this is audio only. The video is more for us to interact, but wh
                 <div className="flex items-center gap-6 text-sm mb-6">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    {new Date(selectedEpisode.date).toLocaleDateString('en-US', { 
+                    {selectedEpisode.date !== "" && new Date(selectedEpisode.date).toLocaleDateString('en-US', { 
                       month: 'long', 
                       day: 'numeric',
                       year: 'numeric'
@@ -1160,11 +1161,15 @@ And by the way, this is audio only. The video is more for us to interact, but wh
             className="text-center"
           >
             <h1 className="text-5xl md:text-7xl font-bold mb-6 pt-30">
-              Episodes
+              The Product Artisan Podcast
             </h1>
             <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-              Deep conversations about technology, design, business, and personal growth. 
-              Join me as I explore ideas that shape our digital world.
+              Welcome to The Product Artisan—a podcast crafted for those who build, scale, and lead 
+              products in the real world. For operators, by operators. <br/> <br/>
+              Each episode features conversations with seasoned operators and product leaders—people 
+              who’ve been in the trenches and know what it takes to deliver impact. This isn’t about 
+              hype or buzzwords. It’s about what actually works, what doesn’t, and more importantly <em>why</em>.
+
             </p>
           </motion.div>
         </div>
@@ -1234,17 +1239,17 @@ And by the way, this is audio only. The video is more for us to interact, but wh
                 }`}
                 onClick={() => setSelectedEpisode(episode)}
               >
-                {episode.featured && (
+                {/* {episode.featured && (
                   <div className="absolute top-4 left-4 z-10">
                     <span className="bg-[#5944e4] text-white text-xs font-bold px-3 py-1 rounded-full">
                       Featured
                     </span>
                   </div>
-                )}
+                )} */}
 
                 {/* Episode Video */}
-                <div className="relative overflow-hidden h-48">
-                  <video
+                {/* <div className="relative overflow-hidden h-48"> */}
+                  {/* <video
                     src={episode.video}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     muted
@@ -1255,31 +1260,32 @@ And by the way, this is audio only. The video is more for us to interact, but wh
                       e.target.currentTime = 0;
                     }}
                   />
+
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                  
+                   */}
                   {/* Play Button */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="bg-[#5944e4]/80 backdrop-blur-sm rounded-full p-4 hover:bg-[#5944e4] transition-colors">
                       <Play className="w-8 h-8 text-white fill-white" />
                     </div>
-                  </div>
-                </div>
+                  </div> */}
+                {/* </div> */}
 
                 {/* Episode Content */}
                 <div className="p-6">
                   <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
                     <div className="flex items-center gap-1">
                       <Calendar className="w-4 h-4" />
-                      {new Date(episode.date).toLocaleDateString('en-US', { 
+                      {episode.date !== "" && new Date(episode.date).toLocaleDateString('en-US', { 
                         month: 'short', 
                         day: 'numeric',
                         year: 'numeric'
                       })}
                     </div>
-                    <div className="flex items-center gap-1">
+                    {/* <div className="flex items-center gap-1">
                       <Clock className="w-4 h-4" />
                       {episode.duration}
-                    </div>
+                    </div> */}
                   </div>
 
                   <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#5944e4] transition-colors">
@@ -1291,7 +1297,7 @@ And by the way, this is audio only. The video is more for us to interact, but wh
                   </p>
 
                   {/* Platform Icons */}
-                  <div className="flex items-center gap-2 mb-4">
+                  {/* <div className="flex items-center gap-2 mb-4">
                     <span className="text-xs text-gray-500">Available on:</span>
                     <div className="flex gap-1">
                       <Music className="w-4 h-4 text-green-500" />
@@ -1299,10 +1305,10 @@ And by the way, this is audio only. The video is more for us to interact, but wh
                       <Headphones className="w-4 h-4 text-gray-800" />
                       <ShoppingBag className="w-4 h-4 text-orange-500" />
                     </div>
-                  </div>
+                  </div> */}
 
                   {/* Tags */}
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  {/* <div className="flex flex-wrap gap-2 mb-4">
                     {episode.tags.map((tag) => (
                       <span
                         key={tag}
@@ -1311,7 +1317,7 @@ And by the way, this is audio only. The video is more for us to interact, but wh
                         {tag}
                       </span>
                     ))}
-                  </div>
+                  </div> */}
 
                   {/* Actions */}
                   <div className="flex items-center gap-3">

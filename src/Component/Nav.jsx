@@ -9,7 +9,7 @@ export default function Navbar() {
   const links = [
     { name: "Home", to: "/" },
     { name: "About Me", to: "/About_me" },
-    { name: "Podcasts", to: "/Podcast" },
+    { name: "Podcast", to: "/Podcast" },
     { name: "Services", to: "/services" },
     { name: "Contact Me", to: "/Contact_Me" },
   ];
