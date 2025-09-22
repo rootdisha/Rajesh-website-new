@@ -19,7 +19,7 @@ const Episodes = () => {
   const [selectedEpisode, setSelectedEpisode] = useState(null);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const categories = ['All', 'Technology', 'Design', 'Business', 'Personal Growth'];
+  const categories = [];
   // const MAX_EPISODE_NUMBER = 10;
 
   // Add newest episode ON TOP. index 0.
@@ -945,7 +945,7 @@ And by the way, this is audio only. The video is more for us to interact, but wh
         className="min-h-screen bg-white"
       >
         {/* Header */}
-        <div className="bg-[#5944e4] text-white">
+        <div className="bg-[#5944e4] text-white pt-12">
           <div className=" mx-auto px-6 py-8">
             <button
               onClick={() => setSelectedEpisode(null)}
