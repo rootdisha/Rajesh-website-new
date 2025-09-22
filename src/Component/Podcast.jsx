@@ -1,7 +1,17 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, Clock, Play, ExternalLink, Filter, ArrowLeft, Share2, Heart, Download, FileText, Music, Youtube, Headphones, ShoppingBag, ChevronLeft, ChevronRight, BookOpen } from 'lucide-react';
-import TPAPImage from "../Images/tpap.png";
+import { 
+  SiYoutube, 
+  SiAmazonmusic, 
+  SiApplepodcasts, 
+  SiBlogger 
+} from "react-icons/si";
+{/* <SiYoutube size={32} color="#FF0000" />
+<SiAmazonmusic size={32} color="#FF9900" />
+<SiApplepodcasts size={32} color="#9933FF" />
+<SiBlogger size={32} color="#FF5722" /> */}
+
 
 const Episodes = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -10,13 +20,13 @@ const Episodes = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const categories = ['All', 'Technology', 'Design', 'Business', 'Personal Growth'];
-  const MAX_EPISODE_NUMBER = 10;
+  // const MAX_EPISODE_NUMBER = 10;
 
   // Add newest episode ON TOP. index 0.
   const episodes = [
     // Ep 10
     {
-      
+      num: 10,
       title: "Decoding Travel Innovation: An episode with Prasanna",
       description: "In this episode of the Product Artisan podcast, Prasanna Veeraswamy, a seasoned product leader with extensive experience in the B2B and B2C sectors, who has also worked across multiple countries globally. Prasanna shares his journey from an engineering leader at Microsoft to taking on various product leadership roles within the travel industry, attributed to his passion for travel and strategic career advice.",
       fullDescription: "In this episode of the Product Artisan podcast, Prasanna Veeraswamy, a seasoned product leader with extensive experience in the B2B and B2C sectors, who has also worked across multiple countries globally. Prasanna shares his journey from an engineering leader at Microsoft to taking on various product leadership roles within the travel industry, attributed to his passion for travel and strategic career advice. The discussion covers the evolution of travel products, the impact of international experience on product leadership, and the role of data in developing and innovating in the travel space. Prasanna also discusses the pivotal role of Gen AI in enhancing productivity within product management and provides insights into building strong cross-functional product teams. Additionally, the conversation touches upon the challenges and opportunities within the travel industry, highlighting Airbnb's unique position through COVID-19 and the potential for innovation in travel products. Prasanna emphasizes the importance of data-driven development, behavioral analytics, and leveraging tools like Amplitude and Mixpanel for insights. The dialogue concludes with perspectives on future innovations in travel, especially around enhancing the experience of travelers through technology and AI.",
@@ -111,7 +121,7 @@ Um, second. Hi, welcome to the Product Partisan podcast. My name is Rajesh and I
     },
     // Ep 9
     {
-      
+      num: 9,
       title: "Navigating the Challenges of Platform Product Management in the Age of Generative AI",
       description: "In this episode, Ravi shares insights from his dynamic career spanning startups, non-profits, and major tech companies. From co-founding Enlite Networks to leadership roles at LibForAll Foundation, Lucidworks, and ServiceNow, Ravi discusses lessons learned in product building, emphasising purpose-driven decision-making and execution rigour.", 
       fullDescription: "In this episode, Ravi shares insights from his dynamic career spanning startups, non-profits, and major tech companies. From co-founding Enlite Networks to leadership roles at LibForAll Foundation, Lucidworks, and ServiceNow, Ravi discusses lessons learned in product building, emphasising purpose-driven decision-making and execution rigour. He explores the impact of Generative AI on product management, outlines the components of product strategy, and introduces the new Jobs to be Done in the era of AI. This podcast provides a concise yet comprehensive dive into Ravi's rich experiences, offering valuable insights for product professionals navigating diverse tech landscapes.",
@@ -190,7 +200,7 @@ Very close to that.....`,
     },
     // Ep 8
     {
-      
+      num: 8,
       title: "Navigating the Product Landscape: A Conversation with Andrea Saez",
       description: "In this episode, Andrea, a seasoned professional in product marketing, shares insights from her multifaceted career journey as a product marketer, advisor, blogger, and author of the book The Product Momentum Gap.",
       fullDescription: "The funding landscape for startups has never been more complex. In this episode, we have an honest conversation about the trade-offs between bootstrapping and raising venture capital. We explore real-world examples of successful companies that chose different paths, discuss the hidden costs of each approach, and provide a framework for entrepreneurs to make informed decisions about funding.",
@@ -286,7 +296,7 @@ Um, second. Hi, welcome to the Product Partisan podcast. My name is Rajesh and I
     },
     // Ep 7
     {
-      
+      num: 7,
       title: "Navigating the Nonprofit Product Management Landscape: A Journey of Impact and Reflection",
       description: "In this episode, Sindhu Kandipati takes us on a journey through her remarkable career trajectory, from her early roles at Microsoft to her impactful contributions at CERN, Eli Lilly, and the Wadhwani Foundation. She delves into her diverse experiences in program management, and brand management, ultimately explaining the pivotal shift that led her to embrace the world of product management.",
       fullDescription: `In this episode, Sindhu Kandipati takes us on a journey through her remarkable career trajectory, from her early roles at Microsoft to her impactful contributions at CERN, Eli Lilly, and the Wadhwani Foundation. She delves into her diverse experiences in program management, and brand management, ultimately explaining the pivotal shift that led her to embrace the world of product management.
@@ -354,7 +364,7 @@ And by the way, this is audio only. The video is more for us to interact, but wh
     },
 //     // Ep 6
 //     {
-//       
+//       num: 6,
 //       title: "Navigating the Waves of Ad Tech: A Product Journey with Amit Goel",
 //       description: "In this episode, Amit Goel, an industry expert in advertising technology, delves into the dynamic landscape of ad tech, privacy laws, and the transformative role of AI. Key insights include navigating privacy laws' evolution, building globally compliant products, and the success formula behind Amagi's rise. Amit also sheds light on the scaling challenges faced and the transition to TradeDesk, emphasising the role of AI, including generative AI, in shaping the future of ad tech.",
 //       fullDescription: "In this episode, Amit Goel, an industry expert in advertising technology, delves into the dynamic landscape of ad tech, privacy laws, and the transformative role of AI. Key insights include navigating privacy laws' evolution, building globally compliant products, and the success formula behind Amagi's rise. Amit also sheds light on the scaling challenges faced and the transition to TradeDesk, emphasising the role of AI, including generative AI, in shaping the future of ad tech.",
@@ -425,7 +435,7 @@ And by the way, this is audio only. The video is more for us to interact, but wh
 //     },
 //     // Ep 5
 //     {
-//       
+//       num: 5,
 //       title: "The Future of Product Management: Reflecting on the Past and Peeking into 2024",
 //       description: "In this podcast episode, Saeed Khan, a seasoned product leader based out of Toronto, shares his insights on the evolution of product management. Saeed discusses his experiences and learnings from his journey in the industry, delving into the importance of problem-solving, innovation, and understanding market needs. He also discusses the impact of Agile on product management, the rise of specialised roles, and the necessity of holistic thinking for successful products.",
 //       fullDescription: "In this podcast episode, Saeed Khan, a seasoned product leader based out of Toronto, shares his insights on the evolution of product management. Saeed discusses his experiences and learnings from his journey in the industry, delving into the importance of problem-solving, innovation, and understanding market needs. He also discusses the impact of Agile on product management, the rise of specialised roles, and the necessity of holistic thinking for successful products.",
@@ -522,7 +532,7 @@ And by the way, this is audio only. The video is more for us to interact, but wh
 //     },
 //     // Ep 4
 //     {
-//       
+//       num: 4,
 //       title: "Product and Design-Match Made in Heaven?",
 //       description: "Product and Design-Match Made in Heaven?",
 //       fullDescription: "The funding landscape for startups has never been more complex. In this episode, we have an honest conversation about the trade-offs between bootstrapping and raising venture capital. We explore real-world examples of successful companies that chose different paths, discuss the hidden costs of each approach, and provide a framework for entrepreneurs to make informed decisions about funding.",
@@ -599,7 +609,7 @@ And by the way, this is audio only. The video is more for us to interact, but wh
 //     },
 //     // Ep 3
 //     {
-//       
+//       num: 3,
 //       title: "Product startups (B2B vsB2C)& Creating new product categories",
 //       description: "In this episode, Andrea, a seasoned professional in product marketing, shares insights from her multifaceted career journey as a product marketer, advisor, blogger, and author of the book The Product Momentum Gap.",
 //       fullDescription: "The funding landscape for startups has never been more complex. In this episode, we have an honest conversation about the trade-offs between bootstrapping and raising venture capital. We explore real-world examples of successful companies that chose different paths, discuss the hidden costs of each approach, and provide a framework for entrepreneurs to make informed decisions about funding.",
@@ -697,7 +707,7 @@ And by the way, this is audio only. The video is more for us to interact, but wh
 //     },
 //     // Ep 2
 //     {
-//       
+//       num: 2,
 //       title: "Navigating the Product Landscape: A Conversation with Andrea Saez",
 //       description: "In this episode, Andrea, a seasoned professional in product marketing, shares insights from her multifaceted career journey as a product marketer, advisor, blogger, and author of the book The Product Momentum Gap.",
 //       fullDescription: "Navigating the Challenges of Platform Product Management in the Age of Generative AI",
@@ -790,7 +800,7 @@ And by the way, this is audio only. The video is more for us to interact, but wh
 //     },
 //     // Ep 1
 //     {
-//       id: 10,
+//       num: 1,
 //       title: "Navigating the Product Landscape: A Conversation with Andrea Saez",
 //       description: "In this episode, Andrea, a seasoned professional in product marketing, shares insights from her multifaceted career journey as a product marketer, advisor, blogger, and author of the book The Product Momentum Gap.",
 //       fullDescription: "Decoding Travel Innovation: An episode with Prasanna",
@@ -953,7 +963,7 @@ And by the way, this is audio only. The video is more for us to interact, but wh
                   </span>
                 )} */}
                 <h1 className="text-4xl lg:text-5xl font-bold mb-4">
-                  {`Ep ${MAX_EPISODE_NUMBER-index}: ` + selectedEpisode.title}
+                  {`Ep ${selectedEpisode.num}: ` + selectedEpisode.title}
                 </h1>
                 <p className="text-white/80 text-lg mb-6">
                   {selectedEpisode.description}
@@ -1303,7 +1313,7 @@ And by the way, this is audio only. The video is more for us to interact, but wh
                   </div>
 
                   <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#5944e4] transition-colors">
-                    {`Ep ${MAX_EPISODE_NUMBER-index}: ` + episode.title}
+                    {`Ep ${episode.num}: ` + episode.title}
                   </h3>
 
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">
