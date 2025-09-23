@@ -66,13 +66,13 @@ const Hero = () => {
             {/* Email subscribe */}
             <div className="w-full max-w-lg mx-auto lg:mx-0 flex flex-col sm:flex-row gap-3">
               <div className="relative flex-1">
-                <Mail className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+                {/* <Mail className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" /> */}
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
-                  className="w-full pl-12 pr-4 py-4 rounded-2xl border-2 border-gray-200 focus:border-[#5944E4] focus:ring-4 focus:ring-[#5944E4]/10 outline-none transition-all bg-white/80 backdrop-blur-sm shadow-sm text-base"
+                  className="w-full pl-5 pr-4 py-4 rounded-2xl border-2 border-gray-200 focus:border-[#5944E4] focus:ring-4 focus:ring-[#5944E4]/10 outline-none transition-all bg-white/80 backdrop-blur-sm shadow-sm text-base"
                 />
               </div>
               <button
@@ -87,8 +87,10 @@ const Hero = () => {
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </>
                 )}
-              </button>        
+              </button>     
+            
             </div>
+            Subscribe for new podcast episodes & product newsletter. 
 
             {/* Action buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start max-w-lg mx-auto lg:mx-0 mt-6">

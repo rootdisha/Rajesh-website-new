@@ -17,7 +17,7 @@ const Home = () => {
       <AboutUs />
 
       {/* Two-column layout: Principles + Sticky RecentPosts */}
-      <section className=" mx-auto px-4 py-16 flex flex-col md:flex-row gap-12">
+      <section className=" mx-auto px-4 py-16 flex flex-row md:flex-col gap-12">
         {/* Left Column: Principles */}
         <div className="flex-4">
           <Principles />

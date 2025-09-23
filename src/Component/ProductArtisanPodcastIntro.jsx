@@ -132,8 +132,8 @@ or buzzwords. It’s about what actually works, what doesn’t, and more importa
           <a
                 href="/Episodes"
                 className="group flex items-center justify-center gap-3 px-8 py-4 
-                          bg-white border-2 border-[#5944E4] text-[#5944E4] font-semibold 
-                          rounded-2xl hover:bg-[#5944E4] hover:text-white transition-all 
+                          hover:bg-white border-2 border-[#5944E4] hover:text-[#5944E4] font-semibold 
+                          rounded-2xl bg-[#5944E4] text-white transition-all 
                           shadow-md hover:shadow-lg transform hover:-translate-y-1 
                           flex-1 sm:flex-none"
               >

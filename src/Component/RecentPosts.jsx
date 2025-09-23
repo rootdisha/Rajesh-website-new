@@ -10,40 +10,40 @@ const posts = [
   { img: postImg3, title: "Alice in Wonderland: Lost Product Managers — insights, a match-made in heaven & the new holy grail — Part II" },
 ];
 
-export default function NewspaperSection() {
+export default function RecentPosts() {
   return (
-    <section className="max-w-3xl mx-auto px-4 py-16 flex flex-col md:flex-row gap-12">
-    
-      {/* Right Column - Recent Posts (Sticky) */}
-      <div className="flex-1">
-        <div className="sticky top-24">
-          <div className="flex items-center mb-4">
-            <div className="w-12 h-1 bg-[#5944e4] mr-3"></div>
-            <h3 className="text-2xl font-bold">Recent Posts</h3>
-          </div>
+    <section className="max-w-6xl mx-auto px-4 py-16">
+      {/* Header */}
+      <div className="flex items-center justify-center mb-8">
+        <div className="w-12 h-1 bg-[#5944e4] mr-3"></div>
+        <h3 className="text-2xl font-bold">Recent Posts</h3>
+      </div>
 
-          <div className="space-y-6">
-            {posts.map((post, index) => (
-              <motion.div
-                key={index}
-                className="flex gap-4 cursor-pointer hover:bg-gray-50 p-3 rounded-lg transition"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.2, duration: 0.5 }}
-              >
-                <img
-                  src={post.img}
-                  alt={post.title}
-                  className="w-24 h-24 object-cover rounded-lg flex-shrink-0"
-                />
-                <div className="flex-1">
-                  <h4 className="font-semibold text-gray-900 text-sm md:text-base">{post.title}</h4>
-                  <p className="text-xs text-gray-500 mt-1">Read more →</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
+      {/* Posts Row Layout */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {posts.map((post, index) => (
+          <motion.div
+            key={index}
+            className="flex flex-col cursor-pointer hover:bg-gray-50 p-4 rounded-lg transition group"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1, duration: 0.5 }}
+          >
+            <img
+              src={post.img}
+              alt={post.title}
+              className="w-full h-48 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
+            />
+            <div className="flex-1">
+              <h4 className="font-semibold text-gray-900 text-sm md:text-base mb-2">
+                {post.title}
+              </h4>
+              <p className="text-xs text-gray-500 group-hover:text-[#5944e4] transition-colors">
+                Read more →
+              </p>
+            </div>
+          </motion.div>
+        ))}
       </div>
     </section>
   );
