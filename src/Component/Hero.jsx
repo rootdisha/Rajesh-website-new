@@ -41,7 +41,7 @@ const Hero = () => {
             {/* Heading */}
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-4xl font-bold leading-tight">
-                <span className="text-gray-900">Man cannot discover new oceans unless he has the courage to lose sight of the shore</span>
+                <span className="text-gray-900">"Man cannot discover new oceans unless he has the courage to lose sight of the shore"</span>
                 {/* <br />
                 <span className="bg-gradient-to-r from-[#5944E4] via-purple-600 to-indigo-600 bg-clip-text text-transparent">
                   ideas & creativity
@@ -49,7 +49,7 @@ const Hero = () => {
                 <br /> */}
                 {/* <span className="text-gray-700">for the modern web</span> */}
               </h1>
-              <p>" Be Positive. Be True. Be Kind - Roy T.Bennett "</p>
+              <em>Be Positive. Be True. Be Kind - Roy T. Bennett</em>
               <div className="w-16 h-1 bg-gradient-to-r from-[#5944E4] to-purple-500 mx-auto lg:mx-0 rounded-full"></div>
             </div>
 
@@ -87,26 +87,36 @@ const Hero = () => {
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </>
                 )}
-              </button>
+              </button>        
             </div>
 
             {/* Action buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start max-w-lg mx-auto lg:mx-0 mt-6">
-            <a
-  href="/aboutus"
-  className="group flex items-center justify-center gap-3 px-8 py-4 
-             bg-white border-2 border-[#5944E4] text-[#5944E4] font-semibold 
-             rounded-2xl hover:bg-[#5944E4] hover:text-white transition-all 
-             shadow-md hover:shadow-lg transform hover:-translate-y-1 
-             flex-1 sm:flex-none"
->
-  <User className="w-5 h-5" />
-  About Me
-</a>
+              <a
+                href="/About_Me"
+                className="group flex items-center justify-center gap-3 px-8 py-4 
+                          bg-white border-2 border-[#5944E4] text-[#5944E4] font-semibold 
+                          rounded-2xl hover:bg-[#5944E4] hover:text-white transition-all 
+                          shadow-md hover:shadow-lg transform hover:-translate-y-1 
+                          flex-1 sm:flex-none"
+              >
+                <User className="w-5 h-5" />
+                About Me
+              </a>
 
-              <button className="group flex items-center justify-center gap-3 px-8 py-4 bg-white border-2 border-gray-300 text-gray-700 font-semibold rounded-2xl hover:bg-gray-100 hover:border-gray-400 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-1 flex-1 sm:flex-none">
-                <Briefcase className="w-5 h-5" /> My Work
-              </button>
+              {/* <button className="group flex items-center justify-center gap-3 px-8 py-4 bg-white border-2 border-gray-300 text-gray-700 font-semibold rounded-2xl hover:bg-gray-100 hover:border-gray-400 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-1 flex-1 sm:flex-none"> */}
+              <a
+                href="/PodcastArtisanPodcast"
+                className="group flex items-center justify-center gap-3 px-8 py-4 
+                          bg-white border-2 border-[#5944E4] text-[#5944E4] font-semibold 
+                          rounded-2xl hover:bg-[#5944E4] hover:text-white transition-all 
+                          shadow-md hover:shadow-lg transform hover:-translate-y-1 
+                          flex-1 sm:flex-none"
+              >
+                <Briefcase className="w-5 h-5" /> 
+                My Work
+                </a>
+              {/* </button> */}
             </div>
 
             {/* Social proof */}
@@ -129,12 +139,12 @@ const Hero = () => {
                     <span>Available for projects</span> */}
                   {/* </div> */}
                 </div>
-                <div className="absolute -bottom-4 right-4 lg:right-8 bg-white rounded-full px-3 py-2 shadow-lg border border-gray-100 z-20">
+                {/* <div className="absolute -bottom-4 right-4 lg:right-8 bg-white rounded-full px-3 py-2 shadow-lg border border-gray-100 z-20">
                   <div className="flex items-center gap-2 text-xs lg:text-sm font-medium text-gray-700">
                     <Play className="w-3 h-3 lg:w-4 lg:h-4 text-[#5944E4]" />
                     <span>Watch intro</span>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

@@ -22,9 +22,9 @@ export default function EssaysSection() {
             </span>
           </div>
 
-            {/* <h2 className="text-4xl md:text-5xl font-serif text-gray-900 leading-tight">
-              Building impactful products and teams that create meaningful change.
-            </h2> */}
+            <h2 className="text-4xl md:text-5xl font-serif text-gray-900 leading-tight">
+            Building high-performing teams and breakthrough products that truly matter
+            </h2>
 
           <p className="text-gray-700 leading-relaxed">
             I’m passionate about creating products that truly make an impact —whether that’s helping

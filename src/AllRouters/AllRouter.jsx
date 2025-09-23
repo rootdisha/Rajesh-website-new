@@ -5,7 +5,8 @@ import ServicesOffered from "../Component/ServicesOffered"
 import AboutUs from "../Component/AboutUs"
 import ContactUs from '../Component/ContactUs'
 import ProductArtisanPodcastIntro from '../Component/ProductArtisanPodcastIntro'
-import PodcastPage from '../Component/Podcast'
+import Episodes from '../Component/Podcast'
+
 
 const AllRouter = () => {
   return (
@@ -16,7 +17,7 @@ const AllRouter = () => {
             <Route path='/About_Me' element={<AboutUs />} />
             <Route path='/Contact_Me' element={<ContactUs />} />
             <Route path='/PodcastArtisanPodcast' element={<ProductArtisanPodcastIntro />} />
-            <Route path='/Podcast' element={<PodcastPage />} />
+            <Route path='/Episodes' element={<Episodes />} />
 
         </Routes>
     </div>

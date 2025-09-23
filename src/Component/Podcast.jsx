@@ -1185,16 +1185,9 @@ And by the way, this is audio only. The video is more for us to interact, but wh
             className="text-center"
           >
             <h1 className="text-5xl md:text-7xl font-bold mb-6 pt-30">
-              The Product Artisan Podcast
+              Episodes
             </h1>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-              Welcome to The Product Artisan—a podcast crafted for those who build, scale, and lead 
-              products in the real world. For operators, by operators. <br/> <br/>
-              Each episode features conversations with seasoned operators and product leaders—people 
-              who’ve been in the trenches and know what it takes to deliver impact. This isn’t about 
-              hype or buzzwords. It’s about what actually works, what doesn’t, and more importantly <em>why</em>.
-
-            </p>
+            
           </motion.div>
         </div>
       </div>

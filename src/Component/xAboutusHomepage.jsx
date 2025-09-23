@@ -12,14 +12,14 @@ export default function EssaysSection() {
           <span className="text-2xl tracking-wider">About Me</span>
         </div>
 
-        {/* <motion.h2
+        <motion.h2
           className="text-3xl md:text-4xl font-serif text-[#5944e4] mb-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Building impactful products and teams while using technology to create meaningful change.
-        </motion.h2> */}
+          Building high-performing teams and breakthrough products that truly matter
+        </motion.h2>
 
         <motion.p
           className="text-gray-700 leading-relaxed mb-4"
@@ -62,7 +62,7 @@ With nearly two decades of leadership experience at Fortune 500 companies and em
 ventures, I’ve had the chance to work with incredible people, breakthrough technologies, and
 bold visions that shape the future.          </p>
          <a
-  href="/aboutus"
+  href="/About_Me"
   className="border border-[#5944e4] text-[#5944e4] px-4 py-2 w-36 
              hover:bg-purple-50 transition inline-block text-center"
 >

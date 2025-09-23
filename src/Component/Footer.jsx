@@ -29,20 +29,12 @@ const Footer = () => {
         >
           <h3 className="text-xl font-bold text-white">Rajesh Chandran</h3>
           <p className="text-gray-400 max-w-sm">
-Helping product leaders and founders drive growth, scale teams, and build world-class execution          </p>
+          Propelling product leaders & founders to break boundaries, build powerhouse teams and master execution          </p>
           <div className="flex flex-col gap-2 text-gray-400">
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />
               <span>rajesh@theproductartisan.com</span>
-            </div>
-            {/* <div className="flex items-center gap-2">
-              <Phone className="w-4 h-4" />
-              <span>+91 98765 43210</span>
-            </div> */}
-            <div className="flex items-center gap-2">
-              <MapPin className="w-4 h-4" />
-              <span>Chennai, India</span>
-            </div>
+            </div>            
           </div>
         </motion.div>
 
