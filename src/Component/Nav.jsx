@@ -7,7 +7,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { name: "Home", to: "/" },
+    // { name: "Home", to: "/" }, // Redundant - Nav Logo goes to /
     { name: "About Me", to: "/About_me" },
     { name: "Podcast", to: "/PodcastArtisanPodcast" },
     { name: "Services", to: "/services" },
