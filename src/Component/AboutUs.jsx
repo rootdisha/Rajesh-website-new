@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import sampleImg from "../Images/ChatGPT_Image_Aug_11__2025__05_27_45_PM-removebg-preview.png";
+import Principles from "./Principles";
+import Expertise from "./Expertise";
 
-export default function EssaysSection() {
+export default function AboutUs() {
   return (
     <section className="relative bg-gradient-to-br from-purple-50 via-white to-purple-100 py-20 px-4 pt-31">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -61,14 +63,20 @@ social fundraising &amp; urban sanitation—initiatives that are improving lives
       </div>
 
       {/* Bottom Essays Text */}
-      <div className="max-w-3xl mx-auto mt-16 text-center">
+      <motion.div className="max-w-3xl mx-auto mt-16 text-center">
         {/* <h3 className="text-3xl font-bold text-gray-900 mb-4">Essays</h3> */}
-        <p className="text-gray-700 leading-relaxed">
+        <motion.p className="text-gray-700 leading-relaxed">
           With nearly two decades of leadership experience at Fortune 500 companies and emerging
 ventures, I’ve had the chance to work with incredible people, breakthrough technologies, and
 bold visions that shape the future.
-        </p>
-      </div>
+        </motion.p>
+      </motion.div>
+
+       {/* Left Column: Principles */}
+       <motion.div className="flex-4">
+          <Principles />
+          <Expertise />
+       </motion.div>
     </section>
   );
 }

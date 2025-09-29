@@ -116,6 +116,10 @@ export default function ContactUs() {
           >
             Send Message
           </button>
+
+          <div>
+          Expect a response within 24-48 hours.
+          </div>
         </motion.form>
       </div>
     </section>
