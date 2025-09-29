@@ -56,7 +56,7 @@ export default function Navbar() {
           <motion.div className="hidden md:block" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link
               to="/About_me"
-              className="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700 transition"
+              className="bg-[#cfe444]  text-[#5944E4] hover:text-white px-5 py-2 rounded-full font-semibold hover:bg-[#5944E4] transition"
               onClick={() => setOpen(false)}
             >
               Let’s Talk
@@ -100,7 +100,7 @@ export default function Navbar() {
             <motion.div className="mt-auto" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
                 to="/About_me"
-                className="bg-blue-600 text-white px-4 py-2 rounded-full text-center font-semibold hover:bg-blue-700 transition"
+                className="bg-[#cfe444] text-[#5944E4] hover:text-white px-4 py-2 rounded-full text-center font-semibold hover:[#5944E4] transition"
                 onClick={() => setOpen(false)}
               >
                 Let’s Talk

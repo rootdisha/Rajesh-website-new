@@ -51,13 +51,6 @@ export default function ProductArtisanPodcastIntro() {
           For operators, by operators.
         </motion.p>
 
-        {/* <motion.p
-          variants={fadeIn}
-          className="mt-4 text-gray-700 text-lg md:text-xl text-center max-w-6xl mx-auto leading-relaxed"
-        >
-          Conversations with seasoned product leaders—no hype, no jargon.
-          Just what works, what doesn’t, and most importantly, <em>why</em>.
-        </motion.p> */}
         <motion.p
           variants={fadeIn}
           className="mt-4 text-gray-700 text-lg md:text-xl text-center max-w-6xl mx-auto leading-relaxed"
@@ -66,6 +59,18 @@ export default function ProductArtisanPodcastIntro() {
 who’ve been in the trenches and know what it takes to deliver impact. This isn’t about hype
 or buzzwords. It’s about what actually works, what doesn’t, and more importantly WHY.
         </motion.p>
+
+        <motion.a
+          variants={fadeIn}
+          href="/Episodes"
+          className="group flex items-center justify-center gap-3 px-8 py-4 
+                    hover:bg-white border-2 border-[#5944E4] hover:text-[#5944E4] font-semibold 
+                    rounded-2xl bg-[#5944E4] text-white transition-all 
+                    shadow-md hover:shadow-lg transform hover:-translate-y-1 
+                    flex-1 sm:flex-none"
+        >
+          Episodes
+        </motion.a>
 
         {/* Cards */}
         <div className="mt-16 grid md:grid-cols-2 gap-10">
@@ -128,18 +133,6 @@ or buzzwords. It’s about what actually works, what doesn’t, and more importa
               craft.
             </p>
           </motion.div>
-
-          <a
-                href="/Episodes"
-                className="group flex items-center justify-center gap-3 px-8 py-4 
-                          hover:bg-white border-2 border-[#5944E4] hover:text-[#5944E4] font-semibold 
-                          rounded-2xl bg-[#5944E4] text-white transition-all 
-                          shadow-md hover:shadow-lg transform hover:-translate-y-1 
-                          flex-1 sm:flex-none"
-              >
-                Episodes
-              </a>
-
         </div>
       </motion.div>
     </section>
