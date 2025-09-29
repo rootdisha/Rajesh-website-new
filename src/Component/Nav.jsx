@@ -11,6 +11,7 @@ export default function Navbar() {
     { name: "About Me", to: "/About_me" },
     { name: "Podcast", to: "/PodcastArtisanPodcast" },
     { name: "Services", to: "/services" },
+    { name: "Blog", to: "/blog" },
     { name: "Contact Me", to: "/Contact_Me" },
   ];
 

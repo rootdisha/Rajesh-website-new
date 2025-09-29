@@ -6,6 +6,7 @@ import AboutUs from "../Component/AboutUs"
 import ContactUs from '../Component/ContactUs'
 import ProductArtisanPodcastIntro from '../Component/ProductArtisanPodcastIntro'
 import Episodes from '../Component/Podcast'
+import BlogPage from '../Component/BlogPage'
 
 
 const AllRouter = () => {
@@ -18,7 +19,7 @@ const AllRouter = () => {
             <Route path='/Contact_Me' element={<ContactUs />} />
             <Route path='/PodcastArtisanPodcast' element={<ProductArtisanPodcastIntro />} />
             <Route path='/Episodes' element={<Episodes />} />
-
+            <Route path='/blog' element={<BlogPage />} />
         </Routes>
     </div>
   )
