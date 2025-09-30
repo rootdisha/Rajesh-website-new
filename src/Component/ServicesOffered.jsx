@@ -85,12 +85,12 @@ export default function ServicesOffered() {
         />
         <div className="md:w-1/2 space-y-4 text-gray-700">
           <h2 className="text-2xl md:text-3xl font-serif text-[#5944e4]">
-          Product Advisory – Unlock Your Next Phase of Growth
+            Product Advisory – Unlock Your Next Phase of Growth
           </h2>
           <p>
-          Rajesh has nearly two decades of experience and has built and scaled products for Fortune 500 companies and high-growth startups—turning bold visions into market-winning propositions across AI, automation, customer care, and conversational commerce.
+            I have nearly two decades of experience building and scaling products for Fortune 500 companies and high-growth startups—turning bold visions into market-winning propositions across AI, automation, customer care, and conversational commerce.
           </p>
-          <p>He has:</p>
+          <p>Over my career, I have:</p>
           <ul className="list-disc list-inside">
             <li>Steered enterprises to renovate with emerging tech</li>
             <li>Helped founders achieve product–market fit and swift growth</li>
@@ -98,23 +98,22 @@ export default function ServicesOffered() {
             <li>Built high-performing teams that perform at scale</li>
           </ul>
           <p>
-          Rajesh now works selectively with founders and leadership teams to achieve product–market fit, expand into new markets, and scale globally.
+            I now work selectively with founders and leadership teams to achieve product–market fit, expand into new markets, and scale globally.
           </p>
           <p>
-          Limited slots available each quarter. 
-          <div className="text-center mt-12 space-y-4">
-
-        {/* Book your consultation */}
-        <a
-          href="https://calendly.com/consultthales"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block border border-[#cfe444] bg-[#cfe444] text-purple-600 px-6 py-2 rounded hover:bg-purple-600 hover:text-white transition-colors"
-        >
-          Book your consultation
-        </a>
-        </div>
+            Limited slots available each quarter.
           </p>
+          <div className="text-center mt-12 space-y-4">
+            {/* Book your consultation */}
+            <a
+              href="https://calendly.com/consultthales"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block border border-[#cfe444] bg-[#cfe444] text-purple-600 px-6 py-2 rounded hover:bg-purple-600 hover:text-white transition-colors"
+            >
+              Book your consultation
+            </a>
+          </div>
         </div>
       </motion.div>
 
