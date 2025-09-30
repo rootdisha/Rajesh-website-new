@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Play, ExternalLink, Calendar, Eye, Filter, Search } from 'lucide-react';
+import videoUrl1 from "../Images/we-are-built-on-trust-and-security-that-is-the-bedrock-on-which-we-work-with-our-customers-rajesh-chandran.jpg"
 
 const InTheNews = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -15,7 +16,7 @@ const InTheNews = () => {
       id: 1,
       title: "We are built on trust and security — that is the bedrock on which we work with our customers: Rajesh Chandran",
       description: "Speaking exclusively at the E-commerce & Digital Native Summit 2025, Rajesh Chandran, Vice President - Product Management, Customer Interaction Suite, Tata Communication, stated that “We are built on trust and security — that is the bedrock on which we work with our customers.”",
-      thumbnail: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fetimg.etb2bimg.com%2Fthumb%2Fmsid-122405902%2Cimgsize-38667%2Cwidth-1200%2Cheight%3D765%2Coverlay-etretail%2Fvideos%2Fwe-are-built-on-trust-and-security-that-is-the-bedrock-on-which-we-work-with-our-customers-rajesh-chandran.jpg&tbnid=h-fsadnjSFr7NM&vet=1&imgrefurl=https%3A%2F%2Fretail.economictimes.indiatimes.com%2Fvideos%2Fwe-are-built-on-trust-and-security-that-is-the-bedrock-on-which-we-work-with-our-customers-rajesh-chandran%2F122405902&docid=F90KR-anzg40MM&w=1200&h=765&itg=1&hl=en-GB&source=sh%2Fx%2Fim%2Fm5%2F3&kgs=08da6ad606016b94&shem=isst",
+      thumbnail: videoUrl1,
       videoUrl: "https://retail.economictimes.indiatimes.com/videos/we-are-built-on-trust-and-security-that-is-the-bedrock-on-which-we-work-with-our-customers-rajesh-chandran/122405902",
       externalUrl: "https://retail.economictimes.indiatimes.com/videos/we-are-built-on-trust-and-security-that-is-the-bedrock-on-which-we-work-with-our-customers-rajesh-chandran/122405902",
       date: "2025-07-12",

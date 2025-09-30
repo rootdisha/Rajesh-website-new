@@ -39,7 +39,8 @@ export default function Navbar() {
               Rajesh Chandran
             </Link>
             <p className="text-gray-400 max-w-sm">
-          Propelling product leaders & founders to break boundaries, build powerhouse teams and master execution          </p>
+              Propelling world class products & leaders          
+            </p>
           </motion.div>
 
           {/* -------- Desktop Links -------- */}
