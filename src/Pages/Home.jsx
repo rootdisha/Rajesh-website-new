@@ -1,15 +1,9 @@
 import React from 'react'
 import Hero from '../Component/Hero'
 import AboutUs from '../Component/AboutUs'
-import Expertise from '../Component/Expertise'
-import RecentPosts from '../Component/RecentPosts'
-import { getNewestPosts } from '../Data/BlogDetail'
 import Contact from '../Component/ContactUs'
-import Principles from '../Component/Principles'
-import ProductArtisanPodcastIntro from '../Component/ProductArtisanPodcastIntro'
 import BlogPreview from '../Component/BlogPreview'
 import PodcastPreview from '../Component/PodcastPreview'
-// import ServicesOffered from '../Component/ServicesOffered'
 
 const Home = () => {
   return (
@@ -31,7 +25,6 @@ const Home = () => {
       </section>
 
       {/* Add newest 3 podcasts  */}
-      {/* <ProductArtisanPodcastIntro /> */}
       <PodcastPreview />
 
       <Contact />

@@ -46,18 +46,16 @@ export default function ProductArtisanPodcastIntro() {
           variants={fadeIn}
           className="text-gray-700 text-lg md:text-xl text-center max-w-6xl mx-auto leading-relaxed"
         >
-          Welcome to <strong>The Product Artisan</strong>—a podcast for those
-          who build, scale, and lead products in the real world.  
-          For operators, by operators.
+          Welcome to <em>The Product Artisan</em> — the platform where you’ll learn to build, scale, and lead products by listening to very experienced product leaders and operators who’ve done it in the real world.
+Cut the clutter. Real stories and real lessons with practical insights!
+
         </motion.p>
 
         <motion.p
           variants={fadeIn}
           className="mt-4 text-gray-700 text-lg md:text-xl text-center max-w-6xl mx-auto leading-relaxed"
         >
-          Each episode features conversations with seasoned operators and product leaders—people
-who’ve been in the trenches and know what it takes to deliver impact. This isn’t about hype
-or buzzwords. It’s about what actually works, what doesn’t, and more importantly WHY.
+          In each episode, you’ll hear straight talk from experienced product leaders and operators who’ve been in the trenches. No hype, no jargon—just real stories about what works, what doesn’t, and <em>why</em> it matters.
         </motion.p>
 
         <motion.a
@@ -85,19 +83,19 @@ or buzzwords. It’s about what actually works, what doesn’t, and more importa
             <ul className="space-y-5 text-gray-700 text-lg">
               <li className="flex items-start gap-3">
                 <Users className="w-6 h-6 text-[#5944e4]" />
-                Stories from senior product executives, founders, and operators
+                Insightful conversations with product executives, founders, and operators
               </li>
               <li className="flex items-start gap-3">
                 <BarChart className="w-6 h-6 text-[#5944e4]" />
-                Lessons on scaling teams, products, and markets
+                Lived lessons on scaling teams, products, and markets
               </li>
               <li className="flex items-start gap-3">
                 <Layers className="w-6 h-6 text-[#5944e4]" />
-                Handling complexity, ambiguity, and trade-offs
+                Practical ways to navigate difficulty, uncertainty, and prioritization
               </li>
               <li className="flex items-start gap-3">
                 <TrendingUp className="w-6 h-6 text-[#5944e4]" />
-                Trends that matter now—and what to watch next
+                Product trends shaping today—and the future
               </li>
             </ul>
           </motion.div>
@@ -113,24 +111,23 @@ or buzzwords. It’s about what actually works, what doesn’t, and more importa
             <ul className="space-y-5 text-gray-700 text-lg">
               <li className="flex items-start gap-3">
                 <Compass className="w-6 h-6 text-[#5944e4]" />
-                Insights from operators who’ve navigated 0→1 and 1→100 journeys
+                Learn from operators who’ve taken products from 0→1 and scaled them 1→100
               </li>
               <li className="flex items-start gap-3">
                 <Target className="w-6 h-6 text-[#5944e4]" />
-                Practical strategies you can apply right away
+                Get practical strategies you can use immediately
               </li>
               <li className="flex items-start gap-3">
                 <Eye className="w-6 h-6 text-[#5944e4]" />
-                Understand the real, messy side of product management
+                See the unpolished, messy side of product management
               </li>
               <li className="flex items-start gap-3">
                 <Mic className="w-6 h-6 text-[#5944e4]" />
-                Inspiration from leaders balancing vision and execution
+                Draw inspiration from leaders who marry vision with execution
               </li>
             </ul>
             <p className="mt-6 text-gray-800 font-medium text-lg text-center md:text-left">
-              Less noise. More substance. Honest conversations to sharpen your
-              craft.
+              No fluff, no filler—just honest conversations to sharpen your craft.
             </p>
           </motion.div>
         </div>

@@ -3,19 +3,19 @@ import { motion } from "framer-motion";
 import { Target, Users } from "lucide-react";
 
 const productPrinciples = [
-  "Start with empathy, end with impact. Every decision must create measurable value for customers.",
-  "Know the journey, not just the touchpoints. Innovation moves fast, but adoption takes time — design for the real customer lifecycle.",
-  "Ship with purpose. Every feature should strengthen an existing moat or create a new one.",
-  "Product and GTM are inseparable. Monetization and distribution are as critical as the product itself.",
-  "Growth compounds from day one. Solve distribution early, and treat it as a core product capability.",
+  "Build lasting products that matter",
+  "Fuse impact, value, and empathy",
+  "Design holistically for the full customer journey",
+  "Align customer insight with purposeful execution",
+  "Empathize in design, deliver with impact, and grow with intent",
 ];
 
 const leadershipPrinciples = [
-  "Seek what’s right, not who’s right. Outcomes matter more than ego.",
-  "Balance your ratios. Improve your Say–Do, Talk–Listen, and Know–Learn every day.",
-  "Be specific, be accountable. Hyper-clear goals and candid reflection are true leadership superpowers.",
-  "Play the team sport. Product thrives on collaboration, diversity, and shared pride across disciplines.",
-"Invest to compound talent. There are no shortcuts — development and upskilling build teams that last.",
+  "Seek what’s right — outcomes over pride",
+  "Balance the percentages — do, listen, and learn",
+  "Be specific and accountable — honest reflection drives growth",
+  "Foster collaboration, embrace diversity, and share success",
+  "Invest in talent — development and upskilling build teams that last",
 ];
 
 export default function Principles() {

@@ -25,20 +25,28 @@ export default function AboutUs() {
           </div>
 
             <h2 className="text-4xl md:text-5xl font-serif text-gray-900 leading-tight">
-            Building high-performing teams and breakthrough products that truly matter
+              Building high-performing teams & breakthrough products that truly matter
             </h2>
 
           <p className="text-gray-700 leading-relaxed">
-            I’m passionate about creating products that truly make an impact —whether that’s helping
-enterprises achieve their business goals or enabling startups to scale. I love building teams
-that thrive on ownership, accountability, and collaboration, and I believe the best results
-come from pairing new ideas with consistent execution.
+            My passion has always been about creating ingenious products that are impactful 
+            and help enterprises realize their business objectives, as well as enable startups 
+            to scale confidently. Execution is crucial, and this is where I thrive—mentoring 
+            and building teams that understand and respond to ownership, accountability, and 
+            partnerships, converging on bold ideas and disciplined implementation.
           </p>
 
           <p className="text-gray-700 leading-relaxed">
-           I also care deeply about how technology can drive change beyond business. Over the years,
-I’ve had the privilege of mentoring social startups tackling challenges like digital literacy, 
-social fundraising &amp; urban sanitation—initiatives that are improving lives in meaningful ways.
+            Beyond business, I see technology as a catalyst for transformative change, and I have 
+            had the privilege of mentoring startups that address challenges related to digital 
+            literacy, social fundraising, and urban sanitation. These initiatives have been personally 
+            satisfying, as they not only solve problems but also help transform communities and enrich lives.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed">
+            With nearly two decades of leadership experience at Fortune 500 companies and emerging
+            ventures, I’ve had the chance to work with incredible people, breakthrough technologies, and
+            bold visions that shape the future.
           </p>
 
         </motion.div>
@@ -56,21 +64,11 @@ social fundraising &amp; urban sanitation—initiatives that are improving lives
 
           <img
             src={sampleImg}
-            alt="Essays Illustration"
+            alt="Rajesh Chandran headshot"
             className="relative w-full md:w-3/5 rounded-2xl  object-cover"
           />
         </motion.div>
       </div>
-
-      {/* Bottom Essays Text */}
-      <motion.div className="max-w-3xl mx-auto mt-16 text-center">
-        {/* <h3 className="text-3xl font-bold text-gray-900 mb-4">Essays</h3> */}
-        <motion.p className="text-gray-700 leading-relaxed">
-          With nearly two decades of leadership experience at Fortune 500 companies and emerging
-ventures, I’ve had the chance to work with incredible people, breakthrough technologies, and
-bold visions that shape the future.
-        </motion.p>
-      </motion.div>
 
        {/* Left Column: Principles */}
        <motion.div className="flex-4">

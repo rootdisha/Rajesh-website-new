@@ -33,32 +33,38 @@ export default function ServicesOffered() {
         />
         <div className="md:w-1/2 space-y-4 text-gray-700">
           <h2 className="text-2xl md:text-3xl font-serif text-[#5944e4]">
-            1. Leadership Coaching - Nurturing future leaders for lasting impact
+            Leadership Coaching – Nurturing Future Leaders for Lasting Impact
           </h2>
           <p>
-            I work with product leaders and senior executives to sharpen strategic
-            clarity, elevate influence across the C-suite, and deliver measurable
-            business outcomes. Having partnered with Fortune 500 companies,
-            high-growth startups, and CxOs navigating complex transformation, I
-            understand the pressures of balancing scale, innovation, and execution.
+          I partner with product leaders and senior executives to sharpen strategy, elevate influence across the C-suite, and deliver measurable outcomes. With experience alongside Fortune 500s, high-growth startups, and CxOs driving transformation, I understand the pressures of scale, innovation, and execution.
           </p>
-          <p>Through focused coaching, I help you:</p>
+          <p>Through coaching, I help you:</p>
           <ul className="list-disc list-inside">
-            <li>Distill complexity into clear decisions that move the business forward.</li>
+            <li>Turn complexity into clear, forward-moving decisions</li>
             <li>
-              Strengthen your executive presence to build trust and alignment with
-              peers, boards, and customers.
+            Strengthen executive presence to build trust and alignment.
             </li>
             <li>
-              Architect product strategies and teams that scale with speed and resilience.
+            Design product strategies and teams that scale with speed and resilience
             </li>
             <li>
-              If you’re ready to expand your impact, drive growth, and lead with confidence
-              in high-stakes environments, I’ll help you get there with precision and clarity.
+            Expand your influence, drive progress, and lead with confidence—I’ll help you get there with precision.
+
             </li>
           </ul>
           <p className="font-medium">
-            Take the next step. Book your consultation call today
+            Take the next step.  
+            {/* Book your consultation */}
+            <div className="text-center mt-12 space-y-4">
+            <a
+              href="https://calendly.com/consultthales"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block border border-[#cfe444] bg-[#cfe444] text-purple-600 px-6 py-2 rounded hover:bg-purple-600 hover:text-white transition-colors"
+            >
+              Book your consultation
+            </a>
+          </div>
           </p>
         </div>
       </motion.div>
@@ -79,32 +85,35 @@ export default function ServicesOffered() {
         />
         <div className="md:w-1/2 space-y-4 text-gray-700">
           <h2 className="text-2xl md:text-3xl font-serif text-[#5944e4]">
-            2. Product Advisory - Unlock your next phase of growth
+          Product Advisory – Unlock Your Next Phase of Growth
           </h2>
           <p>
-            Rajesh is a proven product leader with nearly two decades of experience
-            building &amp; shaping products for Fortune 500 companies and catalyzing
-            high-growth startups in their scaling &amp; expansion growth phases. His
-            work spans enterprise AI &amp; automation, intelligent customer care,
-            conversational commerce — where he has consistently turned bold product
-            vision into market-share winning propositions.
+          Rajesh has nearly two decades of experience and has built and scaled products for Fortune 500 companies and high-growth startups—turning bold visions into market-winning propositions across AI, automation, customer care, and conversational commerce.
           </p>
-          <p>Over his career, Rajesh has:</p>
+          <p>He has:</p>
           <ul className="list-disc list-inside">
-            <li>Guided Fortune 500 enterprises to modernize and scale with emerging technologies</li>
-            <li>Helped founders achieve product-market fit and unlock rapid market penetration</li>
-            <li>Designed pricing and monetization models that drive sustainable profitability</li>
-            <li>Built and led high-performance product teams that execute at speed and scale</li>
+            <li>Steered enterprises to renovate with emerging tech</li>
+            <li>Helped founders achieve product–market fit and swift growth</li>
+            <li>Designed monetization models for workable viability</li>
+            <li>Built high-performing teams that perform at scale</li>
           </ul>
           <p>
-            Rajesh now works selectively with founders and leadership teams who are preparing
-            for their next stage of growth. Whether you’re aiming to secure product-market fit,
-            expand into new markets, or take your product global, his tailored 1:1 advisory offers
-            high-leverage insights that accelerate outcomes.
+          Rajesh now works selectively with founders and leadership teams to achieve product–market fit, expand into new markets, and scale globally.
           </p>
           <p>
-            Availability is limited to a small number of engagements each quarter to ensure focus
-            and impact. <span className="font-bold">Book your consultation slot today.</span> 
+          Limited slots available each quarter. 
+          <div className="text-center mt-12 space-y-4">
+
+        {/* Book your consultation */}
+        <a
+          href="https://calendly.com/consultthales"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block border border-[#cfe444] bg-[#cfe444] text-purple-600 px-6 py-2 rounded hover:bg-purple-600 hover:text-white transition-colors"
+        >
+          Book your consultation
+        </a>
+        </div>
           </p>
         </div>
       </motion.div>
@@ -125,24 +134,20 @@ export default function ServicesOffered() {
         />
         <div className="md:w-1/2 space-y-4 text-gray-700">
           <h2 className="text-2xl md:text-3xl font-serif text-[#5944e4]">
-            3. Product Talks &amp; Webinars - Behind highs &amp; lows of product building
+          Product Talks & Webinars – Behind the Highs & Lows of Product Building
           </h2>
           <p>
-            I regularly share what I’ve learned over years leading product at high-growth
-            tech companies — from launching new platforms, scaling product teams, to
-            building AI/ML-driven enterprise solutions.
+          I share lessons from leading products at high-growth tech companies—launching platforms, scaling teams, and building AI/ML-driven enterprise solutions.
           </p>
-          <p>I bring those insights into engaging talks and webinars, and here’s what I offer:</p>
+          <p>What I bring:</p>
           <ul className="list-disc list-inside">
-            <li>Real stories, real challenges — no idealised theory. I talk about trade-offs, mistakes, and what actually worked when scaling from 0→1 and 1→100.</li>
-            <li>Tactical takeaways — frameworks, decision-points, and leadership lessons that product executives, founders, and CxOs can use straight away.</li>
-            <li>Cross-functional insight — I span product strategy, platform work, AI/ML, new tech incubation &amp; working with engineering, UX, business functions.</li>
-            <li>Tailored sessions — whether for senior leadership, product teams, or larger audiences at conferences or workshops, I adapt to their context (industry, scale, markets).</li>
+            <li>True experience and encounters—prioritisation, slipups, and what worked from 0→1 to 1→100</li>
+            <li>Strategic takeaways—outlines, choices, and leadership lessons you can apply immediately</li>
+            <li>Cross-functional insight—spanning product strategy, AI/ML, platforms, and collaboration across UX, engineering, and business</li>
+            <li>Tailored sessions—for leadership teams, product orgs, or large conference audiences</li>
           </ul>
           <p>
-            If your organisation is looking for a speaker who avoids hype, values substance,
-            and focuses on how things really work — happy to collaborate. Book your consultation
-            slot today.
+          If you want a speaker who values substance over hype, let’s connect.
           </p>
         </div>
         
@@ -150,10 +155,10 @@ export default function ServicesOffered() {
       <div className="text-center mt-12 space-y-4">
       {/* Book your consultation */}
       <a
-        href="https://calendly.com/your-calendly-link"
+        href="https://calendly.com/consultthales"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block border border-purple-600 text-purple-600 px-6 py-2 rounded hover:bg-purple-600 hover:text-white transition-colors"
+        className="inline-block border border-[#cfe444] bg-[#cfe444] text-purple-600 px-6 py-2 rounded hover:bg-purple-600 hover:text-white transition-colors"
       >
         Book your consultation
       </a>
@@ -161,7 +166,7 @@ export default function ServicesOffered() {
       {/* Contact me */}
       <a
         href="mailto:rajesh@theproductartisan.com"
-        className="inline-block border border-gray-700 text-gray-700 px-6 py-2 rounded hover:bg-gray-700 hover:text-white transition-colors ml-4"
+        className="inline-block border border-[#cfe444] text-gray-700 px-6 py-2 rounded hover:bg-gray-700 hover:text-white transition-colors ml-4"
       >
         Contact me
       </a>
