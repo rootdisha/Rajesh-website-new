@@ -29,7 +29,7 @@ const ContactModal = ({ isOpen, setIsOpen }) => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          access_key: web3formKey, 
+          access_key: web3formKey, // rajesh@theproductartisan.com
           name: formData.name,
           email: formData.email,
           message: formData.message,

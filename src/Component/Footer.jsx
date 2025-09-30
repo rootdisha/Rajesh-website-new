@@ -32,7 +32,9 @@ const Footer = () => {
           <div className="flex flex-col gap-2 text-gray-400">
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />
-              <span>rajesh@theproductartisan.com</span>
+              <a href="mailto:rajesh@theproductartisan.com">
+                <span>rajesh@theproductartisan.com</span>
+              </a>
             </div>            
           </div>
         </motion.div>

@@ -1,32 +1,41 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar, Clock, Play, ExternalLink, Filter, ArrowLeft, Share2, Heart, Download, FileText, Music, Youtube, Headphones, ShoppingBag, ChevronLeft, ChevronRight, BookOpen } from 'lucide-react';
-import { 
-  SiYoutube, 
-  SiAmazonmusic, 
-  SiApplepodcasts, 
-  SiBlogger 
-} from "react-icons/si";
-{/* <SiYoutube size={32} color="#FF0000" />
-<SiAmazonmusic size={32} color="#FF9900" />
-<SiApplepodcasts size={32} color="#9933FF" />
-<SiBlogger size={32} color="#FF5722" /> */}
-import { episodes } from '../Data/PodcastDetail';
-
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  Calendar,
+  Clock,
+  Play,
+  ExternalLink,
+  Filter,
+  ArrowLeft,
+  Share2,
+  Heart,
+  Download,
+  FileText,
+  Headphones,
+  ChevronLeft,
+  ChevronRight,
+  BookOpen,
+} from "lucide-react";
+import { episodes } from "../Data/PodcastDetail";
+import { FaYoutube, FaSpotify, FaAmazon, FaApple } from "react-icons/fa";
 
 const Episodes = () => {
-  const [selectedCategory, setSelectedCategory] = useState('All');
-  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [searchTerm, setSearchTerm] = useState("");
   const [selectedEpisode, setSelectedEpisode] = useState(null);
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const categories = [];
 
-  const filteredEpisodes = episodes.filter(episode => {
-    const matchesCategory = selectedCategory === 'All' || episode.category === selectedCategory;
-    const matchesSearch = episode.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         episode.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         episode.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
+  const filteredEpisodes = episodes.filter((episode) => {
+    const matchesCategory =
+      selectedCategory === "All" || episode.category === selectedCategory;
+    const matchesSearch =
+      episode.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      episode.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      episode.tags.some((tag) =>
+        tag.toLowerCase().includes(searchTerm.toLowerCase())
+      );
     return matchesCategory && matchesSearch;
   });
 
@@ -35,9 +44,9 @@ const Episodes = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
@@ -47,15 +56,15 @@ const Episodes = () => {
       opacity: 1,
       transition: {
         type: "spring",
-        stiffness: 100
-      }
-    }
+        stiffness: 100,
+      },
+    },
   };
 
   const pageVariants = {
     initial: { opacity: 0, x: 100 },
     in: { opacity: 1, x: 0 },
-    out: { opacity: 0, x: -100 }
+    out: { opacity: 0, x: -100 },
   };
 
   const nextSlide = () => {
@@ -70,18 +79,18 @@ const Episodes = () => {
     {
       title: "Listen on Your Favorite Platform",
       description: "Available on all major podcast platforms",
-      icon: <Headphones className="w-12 h-12" />
+      icon: <Headphones className="w-12 h-12" />,
     },
     {
       title: "Complete Show Resources",
       description: "Get transcripts, PDFs, and blog posts",
-      icon: <FileText className="w-12 h-12" />
+      icon: <FileText className="w-12 h-12" />,
     },
     {
       title: "Interactive Learning",
       description: "Timestamped notes and key takeaways",
-      icon: <BookOpen className="w-12 h-12" />
-    }
+      icon: <BookOpen className="w-12 h-12" />,
+    },
   ];
 
   // Episode Detail View
@@ -93,10 +102,10 @@ const Episodes = () => {
         animate="in"
         exit="out"
         transition={{ duration: 0.5 }}
-        className="min-h-screen bg-white"
+        className="min-h-screen bg-white pt-22" // navbar height
       >
         {/* Header */}
-        <div className="bg-[#5944e4] text-white pt-12">
+        <div className="bg-[#5944e4] text-white ">
           <div className=" mx-auto px-6 py-8">
             <button
               onClick={() => setSelectedEpisode(null)}
@@ -119,15 +128,19 @@ const Episodes = () => {
                 <p className="text-white/80 text-lg mb-6">
                   {selectedEpisode.description}
                 </p>
-                
+
                 <div className="flex items-center gap-6 text-sm mb-6">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    {selectedEpisode.date !== "" && new Date(selectedEpisode.date).toLocaleDateString('en-US', { 
-                      month: 'long', 
-                      day: 'numeric',
-                      year: 'numeric'
-                    })}
+                    {selectedEpisode.date !== "" &&
+                      new Date(selectedEpisode.date).toLocaleDateString(
+                        "en-US",
+                        {
+                          month: "long",
+                          day: "numeric",
+                          year: "numeric",
+                        }
+                      )}
                   </div>
                   {/* <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4" />
@@ -135,32 +148,53 @@ const Episodes = () => {
                   </div> */}
                 </div>
 
-
                 <div className="flex gap-3">
-                  {Object.values(selectedEpisode.platforms).some(p => p !== "") && 
-                      <div> 
-                        {/* <Play className="w-15 h-15" /> */}
-                        {/* Platform Links */}
-                        <div className="flex gap-3 mb-6">
-                          {selectedEpisode.platforms.spotify !== "" && <a href={selectedEpisode.platforms.spotify} className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-2">
-                            <Music className="w-4 h-4" />
+                  {Object.values(selectedEpisode.platforms).some(
+                    (p) => p !== ""
+                  ) && (
+                    <div>
+                      {/* <Play className="w-15 h-15" /> */}
+                      {/* Platform Links */}
+                      <div className="flex gap-3 mb-6">
+                        {selectedEpisode.platforms.spotify !== "" && (
+                          <a
+                            href={selectedEpisode.platforms.spotify}
+                            className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-2"
+                          >
+                            <FaSpotify className="w-4 h-4" />
                             Spotify
-                          </a>}
-                          {selectedEpisode.platforms.youtube !== "" && <a href={selectedEpisode.platforms.youtube} className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-2">
-                            <Youtube className="w-4 h-4" />
+                          </a>
+                        )}
+                        {selectedEpisode.platforms.youtube !== "" && (
+                          <a
+                            href={selectedEpisode.platforms.youtube}
+                            className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-2"
+                          >
+                            <FaYoutube className="w-4 h-4" />
                             YouTube
-                          </a>}
-                          {selectedEpisode.platforms.apple !== "" && <a href={selectedEpisode.platforms.apple} className="bg-black hover:bg-gray-800 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-2">
-                            <Headphones className="w-4 h-4" />
+                          </a>
+                        )}
+                        {selectedEpisode.platforms.apple !== "" && (
+                          <a
+                            href={selectedEpisode.platforms.apple}
+                            className="bg-black hover:bg-gray-800 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-2"
+                          >
+                            <FaApple className="w-4 h-4" />
                             Apple
-                          </a>}
-                          {selectedEpisode.platforms.amazon !== "" && <a href={selectedEpisode.platforms.amazon} className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-2">
-                            <ShoppingBag className="w-4 h-4" />
+                          </a>
+                        )}
+                        {selectedEpisode.platforms.amazon !== "" && (
+                          <a
+                            href={selectedEpisode.platforms.amazon}
+                            className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-2"
+                          >
+                            <FaAmazon className="w-4 h-4" />
                             Amazon
-                          </a>}
-                        </div>
+                          </a>
+                        )}
                       </div>
-                    }
+                    </div>
+                  )}
                   {/* <a href={selectedEpisode.downloadUrl} className="bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full font-medium hover:bg-white/30 transition-colors flex items-center gap-2">
                     <Download className="w-5 h-5" />
                     Download
@@ -236,7 +270,9 @@ const Episodes = () => {
             <div className="lg:col-span-2">
               {/* Show Notes */}
               <div className="mb-12">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Show Notes</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                  Show Notes
+                </h2>
                 <div className="prose prose-lg max-w-none">
                   <div className="whitespace-pre-line text-gray-700 leading-relaxed">
                     {selectedEpisode.showNotes}
@@ -246,7 +282,9 @@ const Episodes = () => {
 
               {/* Transcript */}
               <div className="mb-12">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Transcript</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                  Transcript
+                </h2>
                 <div className="bg-gray-50 rounded-2xl p-6 max-h-96 overflow-y-auto">
                   <div className="whitespace-pre-line text-gray-700 text-sm font-mono">
                     {selectedEpisode.transcript}
@@ -255,7 +293,9 @@ const Episodes = () => {
               </div>
 
               <div className="bg-gray-50 rounded-2xl p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">Episode Resources</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-4">
+                  Episode Resources
+                </h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {/* <a href={selectedEpisode.downloadUrl} className="flex items-center justify-center gap-2 bg-white p-4 rounded-xl hover:shadow-lg transition-shadow">
                     <Download className="w-5 h-5 text-[#5944e4]" />
@@ -338,7 +378,6 @@ const Episodes = () => {
             <h1 className="text-5xl md:text-7xl font-bold mb-6 pt-30">
               Episodes
             </h1>
-            
           </motion.div>
         </div>
       </div>
@@ -375,8 +414,8 @@ const Episodes = () => {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                   selectedCategory === category
-                    ? 'bg-[#5944e4] text-white shadow-lg shadow-[#5944e4]/25'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    ? "bg-[#5944e4] text-white shadow-lg shadow-[#5944e4]/25"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
                 {category}
@@ -403,7 +442,7 @@ const Episodes = () => {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className={`group relative bg-white rounded-2xl overflow-hidden border border-gray-200 hover:border-[#5944e4] hover:shadow-xl transition-all duration-500 cursor-pointer ${
-                  episode.featured ? 'ring-2 ring-[#5944e4]/30' : ''
+                  episode.featured ? "ring-2 ring-[#5944e4]/30" : ""
                 }`}
                 onClick={() => setSelectedEpisode(episode)}
               >
@@ -417,7 +456,7 @@ const Episodes = () => {
 
                 {/* Episode Video */}
                 {/* <div className="relative overflow-hidden h-48"> */}
-                  {/* <video
+                {/* <video
                     src={episode.video}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     muted
@@ -431,8 +470,8 @@ const Episodes = () => {
 
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                    */}
-                  {/* Play Button */}
-                  {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {/* Play Button */}
+                {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="bg-[#5944e4]/80 backdrop-blur-sm rounded-full p-4 hover:bg-[#5944e4] transition-colors">
                       <Play className="w-8 h-8 text-white fill-white" />
                     </div>
@@ -444,11 +483,12 @@ const Episodes = () => {
                   <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
                     <div className="flex items-center gap-1">
                       <Calendar className="w-4 h-4" />
-                      {episode.date !== "" && new Date(episode.date).toLocaleDateString('en-US', { 
-                        month: 'short', 
-                        day: 'numeric',
-                        year: 'numeric'
-                      })}
+                      {episode.date !== "" &&
+                        new Date(episode.date).toLocaleDateString("en-US", {
+                          month: "short",
+                          day: "numeric",
+                          year: "numeric",
+                        })}
                     </div>
                     {/* <div className="flex items-center gap-1">
                       <Clock className="w-4 h-4" />
@@ -468,10 +508,18 @@ const Episodes = () => {
                   <div className="flex items-center gap-2 mb-4">
                     <span className="text-xs text-gray-500">Available on:</span>
                     <div className="flex gap-1">
-                      {episode.platforms.apple !== "" && <Music className="w-4 h-4 text-green-500" />}
-                      {episode.platforms.youtube !== "" && <Youtube className="w-4 h-4 text-red-500" />}
-                      {episode.platforms.spotify !== "" && <Headphones className="w-4 h-4 text-gray-800" />}
-                      {episode.platforms.amazon !== "" && <ShoppingBag className="w-4 h-4 text-orange-500" />}
+                      {episode.platforms.apple !== "" && (
+                        <FaApple className="w-4 h-4 " />
+                      )}
+                      {episode.platforms.youtube !== "" && (
+                        <FaYoutube className="w-4 h-4" />
+                      )}
+                      {episode.platforms.spotify !== "" && (
+                        <FaSpotify className="w-4 h-4" />
+                      )}
+                      {episode.platforms.amazon !== "" && (
+                        <FaAmazon className="w-4 h-4 " />
+                      )}
                     </div>
                   </div>
 
@@ -512,7 +560,9 @@ const Episodes = () => {
           >
             <Filter className="w-16 h-16 text-gray-400 mx-auto mb-4" />
             <h3 className="text-xl text-gray-600 mb-2">No episodes found</h3>
-            <p className="text-gray-500">Try adjusting your search or filter criteria</p>
+            <p className="text-gray-500">
+              Try adjusting your search or filter criteria
+            </p>
           </motion.div>
         )}
       </div>
