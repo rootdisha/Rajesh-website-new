@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import ContactModal from "./ContactModal";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [contactModalOpen, setContactModalOpen] = useState(false);
 
   const links = [
     // { name: "Home", to: "/" }, // Redundant - Nav Logo goes to /
@@ -13,7 +15,7 @@ export default function Navbar() {
     { name: "Services", to: "/services" },
     { name: "Blog", to: "/blog" },
     { name: "In The News", to: "/news"},
-    { name: "Contact Me", to: "/Contact_Me" },
+    // { name: "Contact Me", to: "/Contact_Me" },
   ];
 
   const drawerVariants = {
@@ -36,6 +38,8 @@ export default function Navbar() {
             >
               Rajesh Chandran
             </Link>
+            <p className="text-gray-400 max-w-sm">
+          Propelling product leaders & founders to break boundaries, build powerhouse teams and master execution          </p>
           </motion.div>
 
           {/* -------- Desktop Links -------- */}
@@ -55,13 +59,12 @@ export default function Navbar() {
 
           {/* Desktop CTA */}
           <motion.div className="hidden md:block" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Link
-              to="/About_me"
-              className="bg-[#cfe444]  text-[#5944E4] hover:text-white px-5 py-2 rounded-full font-semibold hover:bg-[#5944E4] transition"
-              onClick={() => setOpen(false)}
+            <button
+              onClick={() => setContactModalOpen(true)}
+              className="bg-[#cfe444] text-purple-600 px-6 py-2 rounded-full font-semibold hover:bg-[#bfd333] transition-colors"
             >
-              Let’s Talk
-            </Link>
+              Let's Talk
+            </button>
           </motion.div>
 
           {/* -------- Mobile Hamburger -------- */}
@@ -99,17 +102,20 @@ export default function Navbar() {
             ))}
 
             <motion.div className="mt-auto" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Link
-                to="/About_me"
-                className="bg-[#cfe444] text-[#5944E4] hover:text-white px-4 py-2 rounded-full text-center font-semibold hover:[#5944E4] transition"
-                onClick={() => setOpen(false)}
+              <button
+                onClick={() => setContactModalOpen(true)}
+                className="bg-[#cfe444] text-purple-600 px-6 py-2 rounded-full font-semibold hover:bg-[#bfd333] transition-colors"
               >
-                Let’s Talk
-              </Link>
+                Let's Talk
+              </button>
             </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
+      <ContactModal 
+        isOpen={contactModalOpen} 
+        setIsOpen={setContactModalOpen} 
+      />
     </nav>
   );
 }

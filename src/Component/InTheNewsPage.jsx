@@ -13,56 +13,18 @@ const InTheNews = () => {
   const videos = [
     {
       id: 1,
-      title: "Product Leadership in the Age of AI",
-      description: "Discussion on how AI is transforming product management and leadership strategies in Fortune 500 companies.",
-      thumbnail: "https://img.youtube.com/vi/KdjZndXKN4I/maxresdefault.jpg",
-      videoUrl: "https://www.youtube.com/embed/KdjZndXKN4I",
-      externalUrl: "https://www.youtube.com/watch?v=KdjZndXKN4I",
-      date: "2024-03-15",
+      title: "We are built on trust and security — that is the bedrock on which we work with our customers: Rajesh Chandran",
+      description: "Speaking exclusively at the E-commerce & Digital Native Summit 2025, Rajesh Chandran, Vice President - Product Management, Customer Interaction Suite, Tata Communication, stated that “We are built on trust and security — that is the bedrock on which we work with our customers.”",
+      thumbnail: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fetimg.etb2bimg.com%2Fthumb%2Fmsid-122405902%2Cimgsize-38667%2Cwidth-1200%2Cheight%3D765%2Coverlay-etretail%2Fvideos%2Fwe-are-built-on-trust-and-security-that-is-the-bedrock-on-which-we-work-with-our-customers-rajesh-chandran.jpg&tbnid=h-fsadnjSFr7NM&vet=1&imgrefurl=https%3A%2F%2Fretail.economictimes.indiatimes.com%2Fvideos%2Fwe-are-built-on-trust-and-security-that-is-the-bedrock-on-which-we-work-with-our-customers-rajesh-chandran%2F122405902&docid=F90KR-anzg40MM&w=1200&h=765&itg=1&hl=en-GB&source=sh%2Fx%2Fim%2Fm5%2F3&kgs=08da6ad606016b94&shem=isst",
+      videoUrl: "https://retail.economictimes.indiatimes.com/videos/we-are-built-on-trust-and-security-that-is-the-bedrock-on-which-we-work-with-our-customers-rajesh-chandran/122405902",
+      externalUrl: "https://retail.economictimes.indiatimes.com/videos/we-are-built-on-trust-and-security-that-is-the-bedrock-on-which-we-work-with-our-customers-rajesh-chandran/122405902",
+      date: "2025-07-12",
       category: "Interviews",
-      source: "Tech Leadership Summit",
-      views: "12.5K",
-      duration: "45:30"
+      source: "E-commerce & Digital Native Summit 2025",
+      // views: "12.5K",
+      duration: "4:00"
     },
-    {
-      id: 2,
-      title: "Building High-Performance Product Teams",
-      description: "Panel discussion on strategies for scaling product teams and maintaining velocity during rapid growth.",
-      thumbnail: "https://img.youtube.com/vi/KdjZndXKN4I/maxresdefault.jpg",
-      videoUrl: "https://www.youtube.com/embed/KdjZndXKN4I",
-      externalUrl: "https://www.youtube.com/watch?v=KdjZndXKN4I",
-      date: "2024-02-20",
-      category: "Panels",
-      source: "Product Conference 2024",
-      views: "8.2K",
-      duration: "38:15"
-    },
-    {
-      id: 3,
-      title: "The Future of B2B SaaS Products",
-      description: "Keynote on emerging trends in B2B SaaS, customer adoption strategies, and building sustainable competitive advantages.",
-      thumbnail: "https://img.youtube.com/vi/KdjZndXKN4I/maxresdefault.jpg",
-      videoUrl: "https://www.youtube.com/embed/KdjZndXKN4I",
-      externalUrl: "https://www.youtube.com/watch?v=KdjZndXKN4I",
-      date: "2024-01-10",
-      category: "Keynotes",
-      source: "SaaS World Conference",
-      views: "15.3K",
-      duration: "52:00"
-    },
-    {
-      id: 4,
-      title: "Product Strategy Deep Dive",
-      description: "In-depth conversation about product strategy frameworks, decision-making processes, and aligning teams around vision.",
-      thumbnail: "https://img.youtube.com/vi/KdjZndXKN4I/maxresdefault.jpg",
-      videoUrl: "https://www.youtube.com/embed/KdjZndXKN4I",
-      externalUrl: "https://www.youtube.com/watch?v=KdjZndXKN4I",
-      date: "2023-12-05",
-      category: "Podcasts",
-      source: "Product Leaders Podcast",
-      views: "6.8K",
-      duration: "1:02:45"
-    }
+    
   ];
 
   const filteredVideos = videos
@@ -210,10 +172,10 @@ const InTheNews = () => {
                         year: 'numeric'
                       })}
                     </div>
-                    <div className="flex items-center gap-1">
+                    {/* <div className="flex items-center gap-1">
                       <Eye className="w-4 h-4" />
                       {video.views}
-                    </div>
+                    </div> */}
                   </div>
 
                   <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[#5944e4] transition-colors line-clamp-2">
