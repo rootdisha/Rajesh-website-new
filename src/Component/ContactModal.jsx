@@ -7,6 +7,7 @@ const ContactModal = ({ isOpen, setIsOpen }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    subject: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -33,7 +34,7 @@ const ContactModal = ({ isOpen, setIsOpen }) => {
           name: formData.name,
           email: formData.email,
           message: formData.message,
-          subject: 'New Contact Form Submission from Website'
+          subject: `New Contact Form Submission from Website - ${formData.subject}`
         })
       });
 
@@ -41,7 +42,7 @@ const ContactModal = ({ isOpen, setIsOpen }) => {
 
       if (result.success) {
         setSubmitStatus('success');
-        setFormData({ name: '', email: '', message: '' });
+        setFormData({ name: '', email: '', subject: '', message: '' });
         setTimeout(() => {
           setSubmitStatus(null);
           setIsOpen(false);
@@ -156,6 +157,21 @@ const ContactModal = ({ isOpen, setIsOpen }) => {
                       />
                     </div>
 
+                    {/* Subject Field */}
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Subject
+                      </label>
+                      <input
+                        type="text"
+                        name="subject"
+                        value={formData.subject}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#cfe444] focus:border-transparent transition-all"
+                        placeholder="What's this about?"
+                      />
+                    </div>
+
                     {/* Message Field */}
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -174,9 +190,9 @@ const ContactModal = ({ isOpen, setIsOpen }) => {
                     {/* Submit Button */}
                     <button
                       onClick={handleSubmit}
-                      disabled={isSubmitting || !formData.name || !formData.email || !formData.message}
+                      disabled={isSubmitting || !formData.name || !formData.email || !formData.subject || !formData.message}
                       className={`w-full py-4 rounded-lg font-semibold transition-all flex items-center justify-center gap-2 ${
-                        isSubmitting || !formData.name || !formData.email || !formData.message
+                        isSubmitting || !formData.name || !formData.email || !formData.subject || !formData.message
                           ? 'bg-gray-400 cursor-not-allowed'
                           : 'bg-purple-600 hover:bg-purple-700 text-white shadow-lg hover:shadow-xl'
                       }`}

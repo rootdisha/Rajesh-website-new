@@ -3,10 +3,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, ExternalLink, Filter, Search, ArrowRight, BookOpen, Clock } from 'lucide-react';
 import { blogPosts } from '../Data/BlogDetail';
 
-const BlogPage = () => {
+const BlogPage = ({ initialCategory = 'All' }) => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [selectedPost, setSelectedPost] = useState(null);
+  
+  // Update selected category when initialCategory prop changes
+  useEffect(() => {
+    setSelectedCategory(initialCategory);
+  }, [initialCategory]);
+  
   const categories = ['All', ...new Set(blogPosts.map(post => post.category))];
 
   const filteredPosts = blogPosts.filter(post => {
