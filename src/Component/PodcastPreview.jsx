@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Calendar, Play, Music, Youtube, Headphones, ShoppingBag, Mic } from "lucide-react";
+import { FaYoutube, FaSpotify, FaAmazon, FaApple } from "react-icons/fa";
 import { getNewestEpisodes } from "../Data/PodcastDetail"; 
 
 const PodcastPreview = () => {
@@ -96,7 +97,7 @@ const PodcastPreview = () => {
                           onClick={(e) => e.stopPropagation()}
                           className="text-green-500 hover:text-green-600 transition-colors"
                         >
-                          <Music className="w-4 h-4" />
+                          <FaSpotify className="w-4 h-4" />
                         </a>
                       )}
                       {episode.platforms.youtube !== "" && (
@@ -107,7 +108,7 @@ const PodcastPreview = () => {
                           onClick={(e) => e.stopPropagation()}
                           className="text-red-500 hover:text-red-600 transition-colors"
                         >
-                          <Youtube className="w-4 h-4" />
+                          <FaYoutube className="w-4 h-4" />
                         </a>
                       )}
                       {episode.platforms.apple !== "" && (
@@ -118,7 +119,7 @@ const PodcastPreview = () => {
                           onClick={(e) => e.stopPropagation()}
                           className="text-gray-800 hover:text-gray-900 transition-colors"
                         >
-                          <Headphones className="w-4 h-4" />
+                          <FaApple className="w-4 h-4" />
                         </a>
                       )}
                       {episode.platforms.amazon !== "" && (
@@ -129,7 +130,7 @@ const PodcastPreview = () => {
                           onClick={(e) => e.stopPropagation()}
                           className="text-orange-500 hover:text-orange-600 transition-colors"
                         >
-                          <ShoppingBag className="w-4 h-4" />
+                          <FaAmazon className="w-4 h-4" />
                         </a>
                       )}
                     </div>

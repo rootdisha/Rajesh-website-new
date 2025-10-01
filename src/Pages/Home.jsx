@@ -1,9 +1,10 @@
 import React from 'react'
 import Hero from '../Component/Hero'
-import AboutUs from '../Component/AboutUs'
+// import AboutUs from '../Component/AboutUs'
 // import Contact from '../Component/ContactUs'
 import BlogPreview from '../Component/BlogPreview'
 import PodcastPreview from '../Component/PodcastPreview'
+import AboutUsPreview from '../Component/AboutUsPreview'
 
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
       <Hero />
 
       {/* AboutUs Section */}
-      <AboutUs />
+      <AboutUsPreview />
 
       {/* Two-column layout: Principles + Sticky RecentPosts */}
       <section className=" mx-auto px-4 py-16 flex flex-row md:flex-col gap-12">
