@@ -58,17 +58,19 @@ Cut the clutter. Real stories and real lessons with practical insights!
           In each episode, you’ll hear straight talk from experienced product leaders and operators who’ve been in the trenches. No hype, no jargon—just real stories about what works, what doesn’t, and <em>why</em> it matters.
         </motion.p>
 
-        <motion.a
-          variants={fadeIn}
-          href="/Episodes"
-          className="group flex items-center justify-center gap-3 px-8 py-4 
-                    hover:bg-white border-2 border-[#5944E4] hover:text-[#5944E4] font-semibold 
-                    rounded-2xl bg-[#5944E4] text-white transition-all 
-                    shadow-md hover:shadow-lg transform hover:-translate-y-1 
-                    flex-1 sm:flex-none"
-        >
-          Episodes
-        </motion.a>
+        <motion.div className="mt-16 px-4 flex justify-center">
+          <a
+            variants={fadeIn}
+            href="/Episodes"
+            className="group flex items-center justify-center gap-3 px-8 py-4 
+                      hover:bg-white border-2 border-[#5944E4] hover:text-[#5944E4] font-semibold 
+                      rounded-2xl bg-[#5944E4] text-white transition-all 
+                      shadow-md hover:shadow-lg transform hover:-translate-y-1 
+                      w-64"
+          >
+            Episodes
+          </a>
+        </motion.div>
 
         {/* Cards */}
         <div className="mt-16 grid md:grid-cols-2 gap-10">
